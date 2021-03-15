@@ -814,6 +814,5 @@ int purchaselist()
    }
    fclose(fp);
     back();
-
 }
 /*Ticket purchase list end*/
