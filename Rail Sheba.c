@@ -1743,3 +1743,15 @@ int food_ct()
     }
 
 }
+
+
+/*Structure for food Start*/
+struct food{
+	char name[50];
+	int seat_num;
+	int couch_no;
+	int quantity;
+	int food_code;
+	int train_code;
+};
+/*Structure End*/
