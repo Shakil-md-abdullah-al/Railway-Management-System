@@ -7,3 +7,9 @@
                                                         Number of Seats: 1
                                                         Train Number: 711
                                                         Cost: 780
+                                                        
+                                                        
+                                                        Name: Jojhef Karthose
+                                                        Number of Seats: 2
+                                                        Train Number: 734
+                                                        Cost: 1600
