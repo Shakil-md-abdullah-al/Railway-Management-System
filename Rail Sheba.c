@@ -43,4 +43,31 @@ int home()
 
 }
 
+
+//Display File all Content
+int print_file(FILE *fptr)
+{
+    char ch;
+
+    while((ch = fgetc(fptr)) != EOF)
+        putchar(ch);
+}
+
+//Delete or Remove File Row
+int delete_file_row(FILE *main_file, FILE *temp_file, const int delete_line)
+{
+    char buffer[255];
+    int count = 1;
+
+    while ((fgets(buffer, 255, main_file)) != NULL)
+    {
+        if (delete_line != count)
+            fputs(buffer, temp_file);
+
+        count++;
+    }
+}
+
+//Update or Replace File Row
+
 /*Home End*/
