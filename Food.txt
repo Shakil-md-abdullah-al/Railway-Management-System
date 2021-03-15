@@ -5,3 +5,7 @@
                                                               Food Name: ABA
                                                               Food Code: 102
                                                               Price: 90
+                                                              
+                                                              Food Name: AcA
+                                                              Food Code: 103
+                                                              Price: 65
