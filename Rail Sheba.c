@@ -1701,3 +1701,45 @@ void specifictrain(int train_num)//Edit
 		printf("\nDeparture:\t\t10:30pm ");
 	}
 }
+
+int food_ct()
+{
+   system("CLS");//Clear Window
+    printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t:::::::::::::   Food Menu    :::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+    printf("\n\n\t\t\t\t\t\tEnter Your Choice: ");
+    printf("\n\n\t\t\t\t\t\t1.Breakfast\n");
+    printf("\t\t\t\t\t\t2.Lunch\n");
+    printf("\t\t\t\t\t\t3.Snack\n");
+    printf("\t\t\t\t\t\t4.Drinks\n");
+
+   int ch;
+    printf("\n\t\t\t\t\t\tEnter your Choice: ");
+    scanf("%d", &ch);
+    switch(ch)
+    {
+    case 1:
+        breakfast_list();
+        break;
+    case 2:
+        lunch_list();
+        break;
+     case 3:
+        snack_list();
+        break;
+     case 4:
+        drink_list();
+        break;
+    default:
+        printf("\a\n\t\t\t\t\t\tWrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back.");
+        getch();
+        system("CLS");
+        food_ct();
+
+    }
+
+}
