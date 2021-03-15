@@ -1222,3 +1222,79 @@ struct pd{
 	int num_of_seats;
 };
 /*Structure for purchases End*/
+
+/*Ticket Purchase Start*/
+
+void usrpurchase(void)
+{
+	char confirm;
+	int i=0;
+	float charges;
+	struct pd passdetails;
+	FILE *fp;
+	fp=fopen("User-Purchase.txt","a");
+	system("cls");
+
+	printf("\n\t\t\t\t\t\tEnter Your Name: ");
+	fflush(stdin);
+	gets(passdetails.name);
+	//error here have to take input of the name
+	printf("\n\t\t\t\t\t\tEnter Number of Seats: ");
+	scanf("%d",&passdetails.num_of_seats);
+	if(passdetails.num_of_seats>=5)
+    {
+        printf("\n\nYou can not buy more then 4 tickets at once. Please try again. ");
+        getch();
+        system("CLS");
+        usrpurchase();
+    }
+	printf("\n\n\t\t\t\t\t\tPress Enter To View Available Trains ");
+	getch();
+	system("cls");
+	view_list();
+	printf("\n\n\t\t\t\t\t\tEnter Train Number: ");
+	start1:
+	scanf("%d",&passdetails.train_num);
+	if(passdetails.train_num>=701 && passdetails.train_num<=735)
+	{
+		charges=charge(passdetails.train_num,passdetails.num_of_seats);
+		printticket(passdetails.name,passdetails.num_of_seats,passdetails.train_num,charges);
+	}
+	else
+	{
+		printf("\n\t\t\t\t\t\tInvalid Train Number! Enter Again. ");
+		goto start1;
+	}
+
+	printf("\n\nConfirm Ticket (y/n):>");
+	start:
+	scanf(" %c",&confirm);
+	if(confirm == 'y'||confirm == 'Y')
+	{
+		fprintf(fp,"Name:%s\t\tNumber of Seats:%d\t\tTrain Number: %d\t\tCharges: %.2f\n",&passdetails.name,passdetails.num_of_seats,passdetails.train_num,charges);
+
+
+
+		printticket(passdetails.name,passdetails.num_of_seats,passdetails.train_num,charges);
+		printf("\n");
+        printf("\nThank You, Your Ticket Purchase complete \n");
+        printf("\nPress Enter to Continue.......");
+        getch();
+        payment();
+	}
+	else
+	{
+		if(confirm=='n' || confirm == 'N'){
+			printf("\nReservation is Not Done!\nPress Any Key to Go back. ");
+		}
+		else
+		{
+			printf("\nInvalid Choice! Enter again-----> ");
+			goto start;
+		}
+	}
+	fclose(fp);
+	getch();
+}
+
+/*Ticket Purchase End*/
