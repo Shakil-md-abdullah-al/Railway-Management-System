@@ -1214,3 +1214,11 @@ int buy_ticket()
     }
 back2();
 }
+
+/*Structure for purchases Start*/
+struct pd{
+	char name[50];
+	int train_num;
+	int num_of_seats;
+};
+/*Structure for purchases End*/
