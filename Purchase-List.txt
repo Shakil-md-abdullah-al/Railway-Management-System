@@ -1,1 +1,4 @@
-
+Name: AKM Khan
+Number of Seats: 2
+Train Number: 701
+Cost: 1560
