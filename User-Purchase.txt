@@ -1,4 +1,5 @@
 Name:Shakil		Number of Seats:2		Train Number: 701		Charges: 1400.00
 Name:Rashed		Number of Seats:3		Train Number: 734		Charges: 1560.00
 Name:Khaled		Number of Seats:1		Train Number: 711		Charges: 780.00
+Name:Meer		Number of Seats:4		Train Number: 708		Charges: 3250.00
 
