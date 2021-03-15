@@ -151,3 +151,69 @@ int Admin_menu()
     }
 }
 /*Admin Menu End*/
+
+/* Admin Option Start*/
+int Admin()
+{
+    system("CLS");//Clear Window
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::      Admin Section     ::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+    printf("\t\t\t\t\t\t1. Upcoming Train Schedule \n");
+    printf("\t\t\t\t\t\t2. Train List \n");
+    printf("\t\t\t\t\t\t3. Ticket Purchase \n");
+    printf("\t\t\t\t\t\t4. Users Account\n");
+    //printf("\t\t\t\t\t\t5. Passenger Information \n");
+    printf("\t\t\t\t\t\t5. Complain Center \n");
+    printf("\t\t\t\t\t\t6. Helpline \n");
+     printf("\t\t\t\t\t\t7. Notice Bord \n");
+    printf("\t\t\t\t\t\t8. Home\n");
+    printf("\t\t\t\t\t\t9. Exit \n");
+
+    int ch;
+    printf("\t\t\t\t\t\tEnter your Choice: ");
+    scanf("%d", &ch);
+    switch(ch)
+    {
+    case 1:
+        train_Schedule();
+        break;
+    case 2:
+        train_list();
+        break;
+    case 3:
+        ticketPurchase();
+        break;
+    case 4:
+        usr_details();
+        break;
+    case 5:
+        User_Report();
+        break;
+    case 6:
+        Complain_Contact();
+        break;
+    case 7:
+        NoticeBoard();
+        break;
+    case 8:
+        home();
+        break;
+     case 9:
+        DisplayResourceNAMessageBox();
+        break;
+
+    default:
+        printf("\a\n\t\t\t\t\t\tWrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back.");
+        getch();
+        system("CLS");
+        Admin();
+
+    }
+}
+
+
+/* Admin Option End*/
