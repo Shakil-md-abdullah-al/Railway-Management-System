@@ -897,3 +897,9 @@ struct comp
     fclose(fp);
     back();
  }
+
+struct notice
+{
+    char notice_no[50];
+    char notice_desc[700];
+};
