@@ -42,7 +42,7 @@ int home()
     }
 
 }
-
+/*Home End*/
 
 //Display File all Content
 int print_file(FILE *fptr)
@@ -69,8 +69,6 @@ int delete_file_row(FILE *main_file, FILE *temp_file, const int delete_line)
 }
 
 //Update or Replace File Row
-
-/*Home End*/
 int replace_row(char filename[], int delete_line)
 {
     FILE *main_file;
