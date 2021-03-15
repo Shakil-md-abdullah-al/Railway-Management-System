@@ -1,3 +1,4 @@
 Name:sdf		Number of Seats:3		Train Number: 734		Charges: 14.00
-Name:Shakil		Number of Seats:2		Train Number: 701		Charges: 14.00
+Name:Shakil		Number of Seats:2		Train Number: 701		Charges: 1400.00
+Name:Rashed		Number of Seats:3		Train Number: 734		Charges: 1560.00
 
