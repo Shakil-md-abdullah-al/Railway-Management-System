@@ -1,1 +1,7 @@
+in Code: 713	|	Train Name: Tista Express	|	Train destination: Dewangonj to Dhaka	|	Status: Arrive	|	Time:25mins
+Train Code: 731	|	Train Name: Chitra Express	|	Train destination: Khulna to Dhaka	|	Status: Arrive	|	Time:45mins
+Train Code: 720	|	Train Name: Upaban Express	|	Train destination: Dhaka to Syhlet	|	Status: Dept	|	Time:15mins
+Train Code: 705	|	Train Name: Kopotash Express	|	Train destination: Dhaka to Rajshahi	|	Status: Dept	|	Time:45mins
+ÿTrain Code: 701	|	Train Name: Tiata Express	|	Train Destination: Dhaka to Khulna	|	Status: Arrival	|	Time:30 Mins
+Train Code: 705	|	Train Name: Rupsa Express	|	Train Destination: Dhaka to Khulna	|	Status: Arraval	|	Time:20 Mins
 
