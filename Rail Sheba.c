@@ -280,3 +280,36 @@ struct train_list
     char con[30];
     char offday[30];
 };
+
+int add_train_list()
+{
+    system("CLS");
+    FILE *fptr;
+    fptr = fopen("Train-Schedule.txt", "a");
+
+    struct train_list add;
+
+    printf("\n\t\t\t\t\t\t:::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                         ::\n");
+    printf("\t\t\t\t\t\t::::: Update Upcoming Train Schedule  :::::::\n");
+    printf("\t\t\t\t\t\t::                                         ::\n");
+    printf("\t\t\t\t\t\t:::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+
+    gets(add.code);
+    printf("\t\t\t\t\t\tEnter Train Code: "); gets(add.code);
+    printf("\t\t\t\t\t\tEnter Train Name: "); scanf("%[^\n]%*c", add.name);
+    printf("\t\t\t\t\t\tEnter Train Destination: "); scanf("%[^\n]%*c", add.dest);
+    printf("\t\t\t\t\t\tEnter Condition(Arrival/Departure): "); scanf("%[^\n]%*c", add.con);
+    printf("\t\t\t\t\t\tEnter Time Left: "); scanf("%[^\n]%*c", add.tm);
+
+
+
+    fprintf(fptr,"Train Code: %s\t|\tTrain Name: %s\t|\tTrain Destination: %s\t|\tStatus: %s\t|\tTime:%s\n", add.code, add.name, add.dest,add.con,add.tm);
+    fclose(fptr);
+    t_list();
+
+    printf("\n\n\t\t\t\t\t\tTrain Added Successful!\nPress Any Key to Go Admin Section. ");
+    getch();
+    Admin();
+}
+
