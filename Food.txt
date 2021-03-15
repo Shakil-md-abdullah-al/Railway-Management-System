@@ -1,1 +1,3 @@
-
+Food Name: AAA
+Food Code: 101
+Price: 80
