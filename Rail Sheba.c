@@ -1830,3 +1830,540 @@ void foodpurchase(void)
 	getch();
 }
 
+
+int cost(int food_code,int item)
+{
+		if (food_code==101 && item==1)
+	{
+		printf("\t\t\t%f",90.0*1);
+	}
+
+	else if (food_code==101 && item==2)
+	{
+		printf("\t\t\t%f",90.0*2);
+	}
+	else if (food_code==101 && item==3)
+	{
+		printf("\t\t\t%f",90.0*3);
+	}
+	else if (food_code==101 && item==4)
+	{
+		printf("\t\t\t%f",90.0*4);
+	}
+	else if (food_code==101 && item==5)
+	{
+		printf("\t\t\t%f",90.0*5);
+	}
+
+
+	else if (food_code==102 && item==1)
+	{
+		printf("\t\t\t%f",70.0*1);
+	}
+	else if (food_code==102 && item==2)
+	{
+		printf("\t\t\t%f",70.0*2);
+	}
+	else if (food_code==102 && item==3)
+	{
+		printf("\t\t\t%f",70.0*3);
+	}
+	else if (food_code==102 && item==4)
+	{
+		printf("\t\t\t%f",70.0*4);
+	}
+	else if (food_code==102 && item==5)
+	{
+		printf("\t\t\t%f",70.0*5);
+	}
+
+
+	else if (food_code==103 && item==1)
+	{
+		printf("\t\t\t%f",40.0*1);
+	}
+	else if (food_code==103 && item==2)
+	{
+		printf("\t\t\t%f",40.0*2);
+	}
+	else if (food_code==103 && item==3)
+	{
+		printf("\t\t\t%f",40.0*3);
+	}
+	else if (food_code==103 && item==4)
+	{
+		printf("\t\t\t%f",40.0*4);
+	}
+	else if (food_code==103 && item==5)
+	{
+		printf("\t\t\t%f",40.0*5);
+	}
+
+
+	else if (food_code==104 && item==1)
+	{
+		printf("\t\t\t%f",50.0*1);
+	}
+	else if (food_code==104 && item==2)
+	{
+		printf("\t\t\t%f",50.0*2);
+	}
+	else if (food_code==104 && item==3)
+	{
+		printf("\t\t\t%f",50.0*3);
+	}
+	else if (food_code==104 && item==4)
+	{
+		printf("\t\t\t%f",50.0*4);
+	}
+	else if (food_code==104 && item==5)
+	{
+		printf("\t\t\t%f",50.0*5);
+	}
+
+
+	else if (food_code==105 && item==1)
+	{
+		printf("\t\t\t%f",110.0*1);
+	}
+	else if (food_code==105 && item==2)
+	{
+		printf("\t\t\t%f",110.0*2);
+	}
+	else if (food_code==105 && item==3)
+	{
+		printf("\t\t\t%f",110.0*3);
+	}
+	else if (food_code==105 && item==4)
+	{
+		printf("\t\t\t%f",110.0*4);
+	}
+	else if (food_code==105 && item==5)
+	{
+		printf("\t\t\t%f",110.0*5);
+	}
+
+
+	else if (food_code==106 && item==1)
+	{
+		printf("\t\t\t%f",140.0*1);
+	}
+	else if (food_code==106 && item==2)
+	{
+		printf("\t\t\t%f",140.0*2);
+	}
+	else if (food_code==106 && item==3)
+	{
+		printf("\t\t\t%f",140.0*3);
+	}
+	else if (food_code==106 && item==4)
+	{
+		printf("\t\t\t%f",140.0*4);
+	}
+	else if (food_code==106 && item==5)
+	{
+		printf("\t\t\t%f",140.0*5);
+	}
+
+
+	else if (food_code==107 && item==1)
+	{
+		printf("\t\t\t%f",90.0*1);
+	}
+	else if (food_code==107 && item==2)
+	{
+		printf("\t\t\t%f",90.0*2);
+	}
+	else if (food_code==107 && item==3)
+	{
+		printf("\t\t\t%f",90.0*3);
+	}
+	else if (food_code==107 && item==4)
+	{
+		printf("\t\t\t%f",90.0*4);
+	}
+	else if (food_code==107 && item==5)
+	{
+		printf("\t\t\t%f",90.0*5);
+	}
+
+
+	else if (food_code==108 && item==1)
+	{
+		printf("\t\t\t%f",130.0*1);
+	}
+	else if (food_code==108 && item==2)
+	{
+		printf("\t\t\t%f",130.0*2);
+	}
+	else if (food_code==108 && item==3)
+	{
+		printf("\t\t\t%f",130.0*3);
+	}
+	else if (food_code==108 && item==4)
+	{
+		printf("\t\t\t%f",130.0*4);
+	}
+	else if (food_code==108 && item==5)
+	{
+		printf("\t\t\t%f",130.0*5);
+	}
+
+
+	else if (food_code==109 && item==1)
+	{
+		printf("\t\t\t%f",180.0*1);
+	}
+	else if (food_code==109 && item==2)
+	{
+		printf("\t\t\t%f",180.0*2);
+	}
+	else if (food_code==109 && item==3)
+	{
+		printf("\t\t\t%f",180.0*3);
+	}
+	else if (food_code==109 && item==4)
+	{
+		printf("\t\t\t%f",180.0*4);
+	}
+	else if (food_code==109 && item==5)
+	{
+		printf("\t\t\t%f",180.0*5);
+	}
+
+
+	else if (food_code==110 && item==1)
+	{
+		printf("\t\t\t%f",70.0*1);
+	}
+	else if (food_code==110 && item==2)
+	{
+		printf("\t\t\t%f",70.0*2);
+	}
+	else if (food_code==110 && item==3)
+	{
+		printf("\t\t\t%f",70.0*3);
+	}
+	else if (food_code==110 && item==4)
+	{
+		printf("\t\t\t%f",70.0*4);
+	}
+	else if (food_code==110 && item==5)
+	{
+		printf("\t\t\t%f",70.0*5);
+	}
+
+
+	else if (food_code==111 && item==1)
+	{
+		printf("\t\t\t%f",30.0*1);
+	}
+	else if (food_code==111 && item==2)
+	{
+		printf("\t\t\t%f",30.0*2);
+	}
+	else if (food_code==111 && item==3)
+	{
+		printf("\t\t\t%f",30.0*3);
+	}
+	else if (food_code==111 && item==4)
+	{
+		printf("\t\t\t%f",30.0*4);
+	}
+	else if (food_code==111 && item==5)
+	{
+		printf("\t\t\t%f",30.0*5);
+	}
+
+
+	else if (food_code==112 && item==1)
+	{
+		printf("\t\t\t%f",30.0*1);
+	}
+	else if (food_code==112 && item==2)
+	{
+		printf("\t\t\t%f",30.0*2);
+	}
+	else if (food_code==112 && item==3)
+	{
+		printf("\t\t\t%f",30.0*3);
+	}
+	else if (food_code==112 && item==4)
+	{
+		printf("\t\t\t%f",30.0*4);
+	}
+	else if (food_code==112 && item==5)
+	{
+		printf("\t\t\t%f",30.0*5);
+	}
+
+
+	else if (food_code==113 && item==1)
+	{
+		printf("\t\t\t%f",20.0*1);
+	}
+	else if (food_code==113 && item==2)
+	{
+		printf("\t\t\t%f",20.0*2);
+	}
+	else if (food_code==113 && item==3)
+	{
+		printf("\t\t\t%f",20.0*3);
+	}
+	else if (food_code==113 && item==4)
+	{
+		printf("\t\t\t%f",20.0*4);
+	}
+	else if (food_code==113 && item==5)
+	{
+		printf("\t\t\t%f",20.0*5);
+	}
+
+
+	else if (food_code==114 && item==1)
+	{
+		printf("\t\t\t%f",10.0*1);
+	}
+	else if (food_code==114 && item==2)
+	{
+		printf("\t\t\t%f",10.0*2);
+	}
+	else if (food_code==114 && item==3)
+	{
+		printf("\t\t\t%f",10.0*3);
+	}
+	else if (food_code==114 && item==4)
+	{
+		printf("\t\t\t%f",10.0*4);
+	}
+	else if (food_code==114 && item==5)
+	{
+		printf("\t\t\t%f",10.0*5);
+	}
+
+
+	else if (food_code==115 && item==1)
+	{
+		printf("\t\t\t%f",25.0*1);
+	}
+	else if (food_code==115 && item==2)
+	{
+		printf("\t\t\t%f",25.0*2);
+	}
+	else if (food_code==115 && item==3)
+	{
+		printf("\t\t\t%f",25.0*3);
+	}
+	else if (food_code==115 && item==4)
+	{
+		printf("\t\t\t%f",25.0*4);
+	}
+	else if (food_code==115 && item==5)
+	{
+		printf("\t\t\t%f",25.0*5);
+	}
+
+
+	else if (food_code==116 && item==1)
+	{
+		printf("\t\t\t%f",15.0*1);
+	}
+	else if (food_code==116 && item==2)
+	{
+		printf("\t\t\t%f",15.0*2);
+	}
+	else if (food_code==116 && item==3)
+	{
+		printf("\t\t\t%f",15.0*3);
+	}
+	else if (food_code==116 && item==4)
+	{
+		printf("\t\t\t%f",15.0*4);
+	}
+	else if (food_code==116 && item==5)
+	{
+		printf("\t\t\t%f",15.0*5);
+	}
+
+
+	else if (food_code==117 && item==1)
+	{
+		printf("\t\t\t%f",15.0*1);
+	}
+	else if (food_code==117 && item==2)
+	{
+		printf("\t\t\t%f",15.0*2);
+	}
+	else if (food_code==117 && item==3)
+	{
+		printf("\t\t\t%f",15.0*3);
+	}
+	else if (food_code==117 && item==4)
+	{
+		printf("\t\t\t%f",15.0*4);
+	}
+	else if (food_code==117 && item==5)
+	{
+		printf("\t\t\t%f",15.0*5);
+	}
+
+
+	else if (food_code==118 && item==1)
+	{
+		printf("\t\t\t%f",20.0*1);
+	}
+	else if (food_code==118 && item==2)
+	{
+		printf("\t\t\t%f",20.0*2);
+	}
+	else if (food_code==118 && item==3)
+	{
+		printf("\t\t\t%f",20.0*3);
+	}
+	else if (food_code==118 && item==4)
+	{
+		printf("\t\t\t%f",20.0*4);
+	}
+	else if (food_code==118 && item==5)
+	{
+		printf("\t\t\t%f",20.0*5);
+	}
+
+
+	else if (food_code==119 && item==1)
+	{
+		printf("\t\t\t%f",10.0*1);
+	}
+	else if (food_code==119 && item==2)
+	{
+		printf("\t\t\t%f",10.0*2);
+	}
+	else if (food_code==119 && item==3)
+	{
+		printf("\t\t\t%f",10.0*3);
+	}
+	else if (food_code==119 && item==4)
+	{
+		printf("\t\t\t%f",10.0*4);
+	}
+	else if (food_code==119 && item==5)
+	{
+		printf("\t\t\t%f",10.0*5);
+	}
+
+
+
+	else if (food_code==120 && item==1)
+	{
+		printf("\t\t\t%f",15.0*1);
+	}
+	else if (food_code==120 && item==2)
+	{
+		printf("\t\t\t%f",15.0*2);
+	}
+	else if (food_code==120 && item==3)
+	{
+		printf("\t\t\t%f",15.0*3);
+	}
+	else if (food_code==120 && item==4)
+	{
+		printf("\t\t\t%f",15.0*4);
+	}
+	else if (food_code==120 && item==5)
+	{
+		printf("\t\t\t%f",15.0*5);
+	}
+
+
+
+	else if (food_code==121 && item==1)
+	{
+		printf("\t\t\t%f",30.0*1);
+	}
+	else if (food_code==121 && item==2)
+	{
+		printf("\t\t\t%f",30.0*2);
+	}
+	else if (food_code==121 && item==3)
+	{
+		printf("\t\t\t%f",30.0*3);
+	}
+	else if (food_code==121 && item==4)
+	{
+		printf("\t\t\t%f",30.0*4);
+	}
+	else if (food_code==121 && item==5)
+	{
+		printf("\t\t\t%f",30.0*5);
+	}
+
+
+
+	else if (food_code==122 && item==1)
+	{
+		printf("\t\t\t%f",20.0*1);
+	}
+	else if (food_code==122 && item==2)
+	{
+		printf("\t\t\t%f",20.0*2);
+	}
+	else if (food_code==122 && item==3)
+	{
+		printf("\t\t\t%f",20.0*3);
+	}
+	else if (food_code==122 && item==4)
+	{
+		printf("\t\t\t%f",20.0*4);
+	}
+	else if (food_code==122 && item==5)
+	{
+		printf("\t\t\t%f",20.0*5);
+	}
+
+
+		else if (food_code==123 && item==1)
+	{
+		printf("\t\t\t%f",35.0*1);
+	}
+		else if (food_code==123 && item==2)
+	{
+		printf("\t\t\t%f",35.0*2);
+	}
+		else if (food_code==123 && item==3)
+	{
+		printf("\t\t\t%f",35.0*3);
+	}
+		else if (food_code==123 && item==4)
+	{
+		printf("\t\t\t%f",35.0*4);
+	}
+		else if (food_code==123 && item==5)
+	{
+		printf("\t\t\t%f",35.0*5);
+	}
+
+
+		else if (food_code==124 && item==1)
+	{
+		printf("\t\t\t%f",60.0*1);
+	}
+		else if (food_code==124 && item==2)
+	{
+		printf("\t\t\t%f",60.0*2);
+	}
+		else if (food_code==124 && item==3)
+	{
+		printf("\t\t\t%f",60.0*3);
+	}
+		else if (food_code==124 && item==4)
+	{
+		printf("\t\t\t%f",60.0*4);
+	}
+		else if (food_code==124 && item==5)
+	{
+		printf("\t\t\t%f",60.0*5);
+	}
+
+
+}
+
