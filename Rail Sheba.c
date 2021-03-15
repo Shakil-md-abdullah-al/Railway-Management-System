@@ -313,3 +313,41 @@ int add_train_list()
     Admin();
 }
 
+
+int t_list()
+{
+    system("CLS");
+    FILE *fp = fopen("Train-Schedule.txt", "r");
+    char buff_train_list[255];
+
+    if(fp == NULL)
+    {
+        printf("Unable to open file!\n");
+        printf("Press any key to Continue\n\n");
+        getch();
+        Admin();
+    }
+
+    printf("\n\t\t\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t\t\t::::::::::  Upcoming Train List   ::::::::::\n");
+    printf("\t\t\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+
+    time_t rawtime;
+  struct tm * timeinfo;
+
+  time ( &rawtime );
+  timeinfo = localtime ( &rawtime );
+  printf ( "\t\t\t\t\t\t\t\tCurrent Time & Date: %s", asctime (timeinfo) );
+  printf("\n\n");
+
+    while(fgets(buff_train_list, sizeof(buff_train_list), fp) != NULL)
+        {
+            fputs(buff_train_list, stdout);
+            fputs("\n\n", stdout);
+        }
+    fclose(fp);
+    back();
+
+}
