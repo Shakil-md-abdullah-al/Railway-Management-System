@@ -859,3 +859,9 @@ int Complain_Contact()
 back();
 }
 
+struct comp
+{
+    char name[85];
+    char phone[20];
+    char disc[700];
+};
