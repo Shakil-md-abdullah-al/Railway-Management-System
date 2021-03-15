@@ -2537,3 +2537,20 @@ int lunch_list()
 	printf("\n\t\t\t109\tBeef Biriyani \t\t\t\t 180\n");
     printf("\n\n");
 }
+
+int snack_list()
+{
+    //Train list by file
+    system("cls");
+	printf("\t\t\t--------------------------------------------------------------");
+	printf("\n\t\t\tItem No.\tFood Name\t\t\tCharges\n");
+	printf("\t\t\t--------------------------------------------------------------");
+	printf("\n\t\t\t110\tChicken Sorma Role \t\t\t   70\n");
+	printf("\n\t\t\t111\tHandmade Chips \t\t\t\t   30\n");
+	printf("\n\t\t\t112\tVegetable Role \t\t\t\t   30\n");
+	printf("\n\t\t\t113\tCup Cake \t\t\t\t   20\n");
+	printf("\n\t\t\t114\tPopcorn \t\t\t\t   10\n");
+	printf("\n\t\t\t115\tChocolate Box \t\t\t\t   25\n");
+	printf("\n\t\t\t116\tPotato Chips \t\t\t\t   15\n");
+    printf("\n\n");
+}
