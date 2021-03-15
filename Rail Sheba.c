@@ -461,5 +461,52 @@ int del_train_list()
 }
 
 
+/*Train List Start*/
+int train_list()
+{
+    system("CLS");//Clear Window
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::      Train List       :::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+    printf("\n\t\t\t\t\t\t1. Add/Update Info \n");
+    printf("\t\t\t\t\t\t2. Show List \n");
+    printf("\t\t\t\t\t\t3. Delete Train\n");
+    printf("\t\t\t\t\t\t4. Admin Section\n");
+    printf("\t\t\t\t\t\t5. Home\n");
+
+
+
+    int ch;
+    printf("\n\t\t\t\t\t\tEnter your Choice: ");
+    scanf("%d", &ch);
+    switch(ch)
+    {
+    case 1:
+        add_t_list();
+        break;
+    case 2:
+        tl_list();
+        break;
+    case 3:
+        del_tl_list();
+        break;
+    case 4:
+        Admin();
+        break;
+    case 5:
+        home();
+        break;
+    default:
+        printf("\a\n\t\t\t\t\t\tWrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back.");
+        getch();
+        system("CLS");
+        train_list();
+
+    }
+
+}
 
 /*Upcoming Train List End*/
