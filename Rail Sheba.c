@@ -1298,3 +1298,134 @@ void usrpurchase(void)
 }
 
 /*Ticket Purchase End*/
+
+int charge(int train_num,int num_of_seats)
+{
+		if ((train_num==701 || train_num==711) && num_of_seats==1)
+	{
+		printf("\t\t\t%f",750.0*1);
+	}
+	else if ((train_num==701 || train_num==711) && num_of_seats==2)
+	{
+		printf("\t\t\t%f",750.0*2);
+	}
+	else if ((train_num==701 || train_num==711) && num_of_seats==3)
+	{
+		printf("\t\t\t%f",750.0*3);
+	}
+	else if ((train_num==701 || train_num==711) && num_of_seats==4)
+	{
+		printf("\t\t\t%f",750.0*4);
+	}
+
+
+	else if ((train_num==703 || train_num==713) && num_of_seats==1)
+	{
+		printf("\t\t\t%f",790.0*1);
+	}
+
+    else if ((train_num==703 || train_num==713) && num_of_seats==2)
+	{
+		printf("\t\t\t%f",790.0*2);
+	}
+	else if ((train_num==703 || train_num==713) && num_of_seats==3)
+	{
+		printf("\t\t\t%f",790.0*3);
+	}
+	else if ((train_num==703 || train_num==713) && num_of_seats==4)
+	{
+		printf("\t\t\t%f",790.0*4);
+	}
+
+
+	else if ((train_num==705 || train_num==715) && num_of_seats==1)
+	{
+		printf("\t\t\t%f",730.0*1);
+	}
+	else if ((train_num==705 || train_num==715) && num_of_seats==2)
+	{
+		printf("\t\t\t%f",730.0*2);
+	}
+	else if ((train_num==705 || train_num==715) && num_of_seats==3)
+	{
+		printf("\t\t\t%f",730.0*3);
+	}
+	else if ((train_num==705 || train_num==715) && num_of_seats==4)
+	{
+		printf("\t\t\t%f",730.0*4);
+	}
+
+
+	else if ((train_num==707 || train_num==717) && num_of_seats==1)
+	{
+		printf("\t\t\t%f",760.0*1);
+	}
+	else if ((train_num==707 || train_num==717) && num_of_seats==2)
+	{
+		printf("\t\t\t%f",760.0*2);
+	}
+	else if ((train_num==707 || train_num==717) && num_of_seats==3)
+	{
+		printf("\t\t\t%f",760.0*3);
+	}
+	else if ((train_num==707 || train_num==717) && num_of_seats==4)
+	{
+		printf("\t\t\t%f",760.0*4);
+	}
+
+
+	else if ((train_num==711 || train_num==731) && num_of_seats==1)
+	{
+		printf("\t\t\t%f",780.0*1);
+	}
+	else if ((train_num==711 || train_num==731) && num_of_seats==2)
+	{
+		printf("\t\t\t%f",780.0*2);
+	}
+	else if ((train_num==711 || train_num==731) && num_of_seats==3)
+	{
+		printf("\t\t\t%f",780.0*3);
+	}
+	else if ((train_num==711 || train_num==731) && num_of_seats==4)
+	{
+		printf("\t\t\t%f",780.0*4);
+	}
+
+
+	else if ((train_num==712 || train_num==733) && num_of_seats==1)
+	{
+		printf("\t\t\t%f",740.0*1);
+	}
+	else if ((train_num==712 || train_num==733) && num_of_seats==2)
+	{
+		printf("\t\t\t%f",740.0*2);
+	}
+	else if ((train_num==712 || train_num==733) && num_of_seats==3)
+	{
+		printf("\t\t\t%f",740.0*3);
+	}
+	else if ((train_num==712 || train_num==733) && num_of_seats==4)
+	{
+		printf("\t\t\t%f",740.0*4);
+	}
+
+
+	else if ((train_num==720 || train_num==734) && num_of_seats==1)
+	{
+		printf("\t\t\t%f",770.0*1);
+	}
+	else if ((train_num==720 || train_num==734) && num_of_seats==2)
+	{
+		printf("\t\t\t%f",770.0*2);
+	}
+	else if ((train_num==720 || train_num==734) && num_of_seats==3)
+	{
+		printf("\t\t\t%f",770.0*3);
+	}
+	else if ((train_num==720 || train_num==734) && num_of_seats==4)
+	{
+		printf("\t\t\t%f",770.0*4);
+	}
+
+
+}
