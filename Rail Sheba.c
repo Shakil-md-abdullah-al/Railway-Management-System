@@ -267,3 +267,16 @@ int train_Schedule()
 
 }
 /*Train Schedule font page End*/
+
+/*Upcoming Train List Start*/
+struct train_list
+{
+    char code[25];
+    char name[80];
+    char dest[200];
+    char time[25];
+    int price;
+    char tm[30];
+    char con[30];
+    char offday[30];
+};
