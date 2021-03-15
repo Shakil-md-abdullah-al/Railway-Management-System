@@ -117,3 +117,37 @@ int replace_row(char filename[], int delete_line)
 
     fclose(main_file);
 }
+
+/*Admin Start*/
+/*Admin Menu Start*/
+int Admin_menu()
+{
+    printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t:::::::::      Admin Section       :::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+  printf("\t\t\t\t\t\tPress 1 to Log In \n");
+  printf("\t\t\t\t\t\tPress 2 to Go Back \n");
+
+  int ch;
+    printf("\n\n\t\t\t\t\t\tEnter your Choice: ");
+    scanf("%d", &ch);
+    switch(ch)
+    {
+    case 1:
+        admin_login();
+        break;
+    case 2:
+        home();
+        break;
+    default:
+        printf("\a\n\t\t\t\t\t\tWrong Input\n");
+        printf("\t\t\t\t\t\tPress any key to go back.");
+        getch();
+        system("CLS");
+        home();
+
+    }
+}
+/*Admin Menu End*/
