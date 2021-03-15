@@ -4,5 +4,4 @@ Train Code: 720	|	Train Name: Upaban Express	|	Train destination: Dhaka to Syhle
 Train Code: 705	|	Train Name: Kopotash Express	|	Train destination: Dhaka to Rajshahi	|	Status: Dept	|	Time:45mins
 ÿTrain Code: 701	|	Train Name: Tiata Express	|	Train Destination: Dhaka to Khulna	|	Status: Arrival	|	Time:30 Mins
 Train Code: 705	|	Train Name: Rupsa Express	|	Train Destination: Dhaka to Khulna	|	Status: Arraval	|	Time:20 Mins
-Train Code: 711	|	Train Name: Tista Express	|	Train Destination: Dhaka to Josser	|	Status: Deperture	|	Time:40 Mins
 
