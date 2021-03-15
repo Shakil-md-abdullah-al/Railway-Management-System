@@ -1755,3 +1755,78 @@ struct food{
 	int train_code;
 };
 /*Structure End*/
+
+/*Ticket Purchase Start*/
+void foodpurchase(void)
+{
+	char confirm;
+	int i=0;
+	float charges;
+	struct food passdetails;
+	FILE *fp;
+	fp=fopen("Food.txt","a");
+	system("cls");
+
+	printf("\nEnter Your Name: ");
+	fflush(stdin);
+	gets(passdetails.name);
+	//error here have to take input of the name
+	printf("\nEnter Your Train Number: ");
+	scanf("%d",&passdetails.train_code);
+	printf("\nEnter Your Couch Number: ");
+	scanf("%d",&passdetails.couch_no);
+	printf("\nEnter Your Seat Number: ");
+	scanf("%d",&passdetails.seat_num);
+	printf("\n\nPress Enter To See Food Menu ");
+	getch();
+	system("cls");
+	food_ct();
+	printf("\n\nEnter Item Number: ");
+	start1:
+	scanf("%d",&passdetails.food_code);
+	printf("\nEnter Food Quantity: ");
+	scanf("%d",&passdetails.quantity);
+	if(passdetails.quantity>=6)
+    {
+        printf("\n\nYou can not buy more then 5 Items at once. Please try again. ");
+        getch();
+        system("CLS");
+        foodpurchase();
+    }
+	if(passdetails.food_code>=101 && passdetails.food_code<=130)
+	{
+		charges=cost(passdetails.food_code,passdetails.quantity);
+		printdetails(passdetails.name,passdetails.food_code,passdetails.quantity,charges);
+	}
+	else
+	{
+		printf("\nInvalid Train Number! Enter Again. ");
+		goto start1;
+	}
+
+	printf("\n\nConfirm Ticket (y/n):>");
+	start:
+	scanf(" %c",&confirm);
+	if(confirm == 'y'||confirm == 'Y')
+	{
+		fprintf(fp,"Name: %s\t\tFood Code: %d\t\tQuantity: %d\t\tCharge:%.2f\n",&passdetails.name,passdetails.food_code,passdetails.quantity,charges);
+
+		printf("\nThank You, Your Ticket Purchase complete \n");
+		printf("\nProceed for Payment........");
+		payment_food();
+	}
+	else
+	{
+		if(confirm=='n'||confirm == 'N'){
+			printf("\nReservation Not Done!\nPress any key to go back to  Main menu!");
+		}
+		else
+		{
+			printf("\nInvalid choice entered! Enter again-----> ");
+			goto start;
+		}
+	}
+	fclose(fp);
+	getch();
+}
+
