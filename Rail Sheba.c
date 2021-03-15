@@ -1427,3 +1427,43 @@ int charge(int train_num,int num_of_seats)
 		printf("\t\t\t%f",770.0*4);
 	}
 }
+
+
+int payment()
+{
+    system("CLS");//Clear Window
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::        Payment        :::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+    printf("\t\t\t\t\t\tSelect a Payment Method\n");
+
+    printf("\t\t\t\t\t\t1. Bkash\n");
+    printf("\t\t\t\t\t\t2. Rocket\n");
+    printf("\t\t\t\t\t\t3. Nagad\n");
+    printf("\t\t\t\t\t\t4. Visa Card\n");
+
+  int ch;
+    printf("\n\t\t\t\t\t\tEnter your Choice:  ");
+    scanf("%d", &ch);
+    switch(ch)
+    {
+    case 1:
+    case 2:
+    case 3:
+        payment_1();
+        break;
+    case 4:
+        payment_2();
+        break;
+    default:
+        printf("\a\n\t\t\t\t\t\tWrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back.");
+        getch();
+        system("CLS");
+        payment();
+    }
+}
+
+/*Mobile Payment*/
