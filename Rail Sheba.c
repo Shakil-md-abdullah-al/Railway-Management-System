@@ -903,3 +903,36 @@ struct notice
     char notice_no[50];
     char notice_desc[700];
 };
+
+
+int viwe_notice_admin()
+{
+     system("cls");
+    FILE *fp = fopen("Notice.txt", "r");
+    char buff_notice[255];
+    struct notice ntc;
+
+    if(fp == NULL)
+    {
+       printf("\n\t\t\t\t\t\tUnable to open file!");
+       printf("\n\t\t\t\t\t\tPress any key to continue");
+       getch();
+       Admin();
+    }
+
+     system("cls");
+        printf("\n\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+        printf("\t\t\t\t\t\t::                                        ::\n");
+        printf("\t\t\t\t\t\t:::::::::::       Notice  ::::::::::::::::::\n");
+        printf("\t\t\t\t\t\t::                                        ::\n");
+        printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n");
+
+
+    while(fgets(buff_notice, sizeof(buff_notice), fp) != NULL)
+        {
+            fputs(buff_notice, stdout);
+            fputs("\n\n", stdout);
+        }
+    fclose(fp);
+    back();
+}
