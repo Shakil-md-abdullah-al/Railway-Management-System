@@ -1426,6 +1426,4 @@ int charge(int train_num,int num_of_seats)
 	{
 		printf("\t\t\t%f",770.0*4);
 	}
-
-
 }
