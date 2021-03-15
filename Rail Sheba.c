@@ -936,3 +936,4 @@ int viwe_notice_admin()
     fclose(fp);
     back();
 }
+/*Admin End*/
