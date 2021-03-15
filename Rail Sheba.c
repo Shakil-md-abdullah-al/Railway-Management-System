@@ -2507,3 +2507,17 @@ else if (food_code==112)
 		printf("\nUnit Price:\t\t60 Tk");
 	}
 }
+
+int breakfast_list()
+{
+    //Train list by file
+    system("CLS");
+	printf("\t\t\t---------------------------------------------------------------------------------------");
+	printf("\n\t\t\tItem No.\tFood Name\t\t\tCharges\t\tQuantity\n");
+	printf("\t\t\t---------------------------------------------------------------------------------------");
+	printf("\n\t\t\t101\tSpecial Naan With Chicken curry \t  90\t\t   01\n");
+	printf("\n\t\t\t102\tBrown bread with eggs \t\t\t  70\t\t   01\n");
+	printf("\n\t\t\t103\tPorota with special vegetable curry \t  40\t\t   01\n");
+	printf("\n\t\t\t104\tCreamy Omlates with bread \t\t  50\t\t   01\n");
+    printf("\n\n");
+}
