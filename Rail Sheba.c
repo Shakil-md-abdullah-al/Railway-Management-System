@@ -730,3 +730,74 @@ typedef struct{
 	int train_num;
 	int num_of_seats;
 }fs;
+
+
+void admin_purchase(void)
+{
+	char confirm;
+	int i=0;
+	float charges;
+	fs passdetails;
+	FILE *fp;
+	fp=fopen("Admin-Purchase.txt","a");
+	system("cls");
+
+	printf("\n\t\t\t\t\t\tEnter Your Name: ");
+	fflush(stdin);
+	gets(passdetails.name);
+	//error here have to take input of the name
+	printf("\n\t\t\t\t\t\tEnter Number of seats: ");
+	scanf("%d",&passdetails.num_of_seats);
+	if(passdetails.num_of_seats>=5)
+    {
+        printf("\n\nYou can not buy more then 4 Tickets at one time. Please try again.");
+        getch();
+        system("CLS");
+        admin_purchase();
+    }
+	printf("\n\n\t\t\t\t\t\tPress Enter To View Available Trains ");
+	getch();
+	system("cls");
+	view_list();
+	printf("\n\n\t\t\t\t\t\tEnter Train number: ");
+	start1:
+	scanf("%d",&passdetails.train_num);
+	if(passdetails.train_num>=701 && passdetails.train_num<=735)
+	{
+		charges=charge(passdetails.train_num,passdetails.num_of_seats);
+		printticket(passdetails.name,passdetails.num_of_seats,passdetails.train_num,charges);
+	}
+	else
+	{
+		printf("\n\t\t\t\t\t\tInvalid Train Number! Enter again. ");
+		goto start1;
+	}
+
+	printf("\n\nConfirm Ticket (y/n):>");
+	start:
+	scanf(" %c",&confirm);
+	if(confirm == 'y'||confirm == 'Y')
+	{
+		fprintf(fp,"Name:%s\t\tNumber of Seats:%d\t\tTrain Number: %d\t\tCharges: %.2f\n",&passdetails.name,passdetails.num_of_seats,passdetails.train_num,charges);
+
+
+
+		printticket(passdetails.name,passdetails.num_of_seats,passdetails.train_num,charges);
+		printf("\n");
+        printf("\nThank You, Your Ticket Purchase complete \n");
+        printf("\nPress Enter to Continue.......");
+	}
+	else
+	{
+		if(confirm=='n' || confirm == 'N'){
+			printf("\nReservation Not Done!\nPress any key to go back to  Main menu!");
+		}
+		else
+		{
+			printf("\nInvalid choice entered! Enter again-----> ");
+			goto start;
+		}
+	}
+	fclose(fp);
+	getch();
+}
