@@ -1117,3 +1117,35 @@ int tu_list()
 
 }
 /*Train List start*/
+
+int user_tlist()
+{
+    //Train list by file
+    system("cls");
+  	printf("\t\t\t---------------------------------------------------------------------------------------------------\n");
+	printf("\n\t\t\tTr.No\tName\t\t\tDestinations\t\tCharges\t\tTime\t\tOff-Day\n");
+	printf("\t\t\t---------------------------------------------------------------------------------------------------\n");
+	printf("\t\t\t701\tSubarna Express\t\tDhaka to chittagong\tTk.750\t\t9:30am\t\tMonday\n");
+    printf("\t\t\t711\tSubarna Express\t\tchittagong To Dhaka\tTk.750\t\t12:00pm\t\tMonday\n");
+
+    printf("\t\t\t703\tTista Express\t\tDhaka To Dewangonj\tTk.790\t\t8:30am\t\tNo Off Day\n");
+    printf("\t\t\t713\tTista Express\t\tDewangonj To Dhaka\tTk.790\t\t4:30pm\t\tNo Off Day\n");
+
+    printf("\t\t\t705\tKapotaskh Express\tDhaka To Rajhshahi\tTk.730\t\t7:30am\t\tThursday\n");
+    printf("\n\t\t\t715\tKapotaskh Express\tRajhshahi To Dhaka\tTk.730\t\t10:30pm\t\tThursday\n");
+
+    printf("\n\t\t\t707\tPanchagarh Express\tDhaka To Panchagarh\tTk.760\t\t9:00am\t\tSunday\n");
+    printf("\t\t\t717\tPanchagarh Express\tPanchagarh To Dhaka\tTk.760\t\t10:30pm\t\tSunday\n");
+
+    printf("\t\t\t711\tChittra Express\t\tDhaka To Khulna\t\tTk.780\t\t6:30am\t\tWednesday\n");
+    printf("\t\t\t731\tChittra Express\t\tKhulna To Dhaka\t\tTk.780\t\t5:30pm\t\tWednesday\n");
+
+    printf("\t\t\t712\tMoitree Express\t\tDhaka To Kolkata\tTk.740\t\t6:30am\t\tTuesday\n");
+    printf("\t\t\t733\tMoitree Express\t\tKolkata To Dhaka\tTk.740\t\t6:30am\t\tTuesday\n");
+
+    printf("\t\t\t720\tUpaban Express\t\tDhaka To Sylhet\t\tTk.770\t\t9:30pm\t\tNo Off Day\n");
+    printf("\t\t\t734\tUpaban Express\t\tSylhet To Dhaka\t\tTk.770\t\t10:30am\t\tNo Off Day\n");
+    printf("\n\n");
+    back2();
+}
+/*Train List start*/
