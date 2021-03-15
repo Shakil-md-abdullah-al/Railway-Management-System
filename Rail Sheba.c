@@ -1543,3 +1543,37 @@ printf("\n\t"); ccolor(240);
  back2();
  system("CLS");
 }
+
+
+/* Card Paymment*/
+
+int payment_2()
+{
+    printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::      Using Card       :::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+ char num[16],pass[5],otp[6],amm[4];
+
+ printf("\t\t\t\t\t\tEnter Your Card Number: ");
+ scanf("%s",&num);
+ printf("\n\t\t\t\t\t\tEnter Amount: ");
+ scanf("%s",&amm);
+ printf("\n\t\t\t\t\t\tEnter OTP: ");
+ scanf("%s",&otp);
+ printf("\n\t\t\t\t\t\tEnter Password: ");
+ scanf("%s",&pass);
+
+
+
+//printf("\n\t"); ccolor(240);
+	//printf("_______________________________________________________");
+	ccolor(26);
+	printf("\n\t"); ccolor(240);
+	printf("\n\t\t\t\tYou will get Your Ticket Purchase form in Your mail  within  30 mint. Be patience!");ccolor(26);
+	printf("\n\t"); ccolor(07);
+
+
+    back2();
+}
