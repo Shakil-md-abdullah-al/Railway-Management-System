@@ -6,6 +6,10 @@
                                                               Food Code: 102
                                                               Price: 90
                                                               
-                                                              Food Name: AcA
+                                                              Food Name: ACA
                                                               Food Code: 103
                                                               Price: 65
+                                                              
+                                                              Food Name: ADA
+                                                              Food Code: 104
+                                                              Price: 50
