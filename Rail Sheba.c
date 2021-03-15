@@ -1612,3 +1612,92 @@ void printticket(char name[],int num_of_seats,int train_num,float charges)
 
 }
 
+
+void specifictrain(int train_num)//Edit
+{
+
+	if (train_num==701)
+	{
+		printf("\nTrain:\t\t\tSubarna Express");
+		printf("\nDestination:\t\tDhaka to Chittagong");
+		printf("\nDeparture:\t\t9am ");
+	}
+	if (train_num==711)
+	{
+		printf("\nTrain:\t\t\tSubarna Express");
+		printf("\nDestination:\t\tChittagong to Dhaka ");
+		printf("\nDeparture:\t\t12pm");
+	}
+	if (train_num==703)
+	{
+		printf("\nTrain:\t\t\tTista Express");
+		printf("\nDestination:\t\tDhaka to Dewangonj");
+		printf("\nDeparture:\t\t8am");
+	}
+	if (train_num==713)
+	{
+		printf("\nTrain:\t\t\tTista Express");
+		printf("\nDestination:\t\tDewangonj to Dhaka");
+		printf("\nDeparture:\t\t11am ");
+	}
+	if (train_num==705)
+	{
+		printf("\nTrain:\t\t\tKapotaskh Express");
+		printf("\nDestination:\t\tDhaka To Rajhshahi");
+		printf("\nDeparture:\t\t7am");
+	}
+	if (train_num==715)
+	{
+		printf("\ntrain:\t\t\tKapotaskh Express");
+		printf("\nDestination:\t\tRajhshahi To Dhaka");
+		printf("\nDeparture:\t\t9.30am ");
+	}
+	if (train_num==707)
+	{
+		printf("\ntrain:\t\t\tPanchagarh Express");
+		printf("\nDestination:\t\tDhaka to ");
+		printf("\nDeparture:\t\t1pm ");
+	}
+	if (train_num==717)
+	{
+		printf("\ntrain:\t\t\tPanchagarh Express");
+		printf("\n Destination:\t\tPanchagarh to Dhaka");
+		printf("\nDeparture:\t\t4pm ");
+	}
+	if (train_num==711)
+	{
+		printf("\ntrain:\t\t\tChittra Express");
+		printf("\nDestination:\t\tDhaka To Khulna");
+		printf("\nDeparture:\t\t3.35pm ");
+	}
+	if (train_num==731)
+	{
+		printf("\ntrain:\t\t\tChittra Express");
+		printf("\nDestination:\t\tKhulna To Dhaka");
+		printf("\nDeparture:\t\t1.15pm ");
+	}
+	if (train_num==712)
+	{
+		printf("\ntrain:\t\t\tMoitree Express");
+		printf("\nDestination:\t\tDhaka To Kolkata");
+		printf("\nDeparture:\t\t1.15 ");
+	}
+	if (train_num==733)
+	{
+		printf("\ntrain:\t\t\tMoitree Express");
+		printf("\nDestination:\t\tKolkata to Dhaka");
+		printf("\nDeparture:\t\t1.15 ");
+	}
+	if (train_num==720)
+	{
+		printf("\ntrain:\t\t\tUpaban Express");
+		printf("\nDestination:\t\tDhaka to Syhlet");
+		printf("\nDeparture:\t\t09:30pm ");
+	}
+	if (train_num==734)
+	{
+		printf("\ntrain:\t\t\tUpaban Express");
+		printf("\nDestination:\t\tSyhlet to Dhaka");
+		printf("\nDeparture:\t\t10:30pm ");
+	}
+}
