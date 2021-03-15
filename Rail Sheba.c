@@ -1509,3 +1509,37 @@ int payment_food()
     }
 }
 
+/*Payment Start*/
+int payment_1()
+{
+    printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t:::::::::     Mobile Banking     :::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+ char num[11],pass[5],otp[4],amm[4];
+
+ printf("\t\t\t\t\t\tEnter Your Number: ");
+ scanf("%s",&num);
+ printf("\n\t\t\t\t\t\tEnter Amount: ");
+ scanf("%s",&amm);
+ printf("\n\t\t\t\t\t\tEnter OTP: ");
+ scanf("%s",&otp);
+ printf("\n\t\t\t\t\t\tEnter Password: ");
+ scanf("%s",&pass);
+
+
+ccolor(26);
+printf("\n\t"); ccolor(240);
+ printf("\n\t\t\t\tPayment Successful!!!. Have a Safe Journey");ccolor(26);
+
+//printf("\n\t"); ccolor(240);
+	//printf("_______________________________________________________");
+	ccolor(26);
+	printf("\n\t"); ccolor(240);
+	printf("\n\t\t\t\tYou will get Your Ticket Purchase form in Your mail  within  30 mint. Be patience!");ccolor(26);
+	printf("\n\t"); ccolor(07);
+	//printf("-------------------------------------------------------");ccolor(26);
+ back2();
+ system("CLS");
+}
