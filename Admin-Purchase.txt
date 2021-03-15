@@ -1,0 +1,5 @@
+SSS		3		701		14.00
+dDd		3		734		14.00
+Name:SDF		Number of Seats:3		Train Number: 712		Charges: 14.00
+Name:s		Number of Seats:2		Train Number: 701		Charges: 14.00
+Name:Shakil		Number of Seats:2		Train Number: 701		Charges: 14.00
