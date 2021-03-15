@@ -1,3 +1,7 @@
                                                               Food Name: AAA
                                                               Food Code: 101
                                                               Price: 80
+                                                              
+                                                              Food Name: ABA
+                                                              Food Code: 102
+                                                              Price: 90
