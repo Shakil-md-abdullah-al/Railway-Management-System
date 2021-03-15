@@ -1589,3 +1589,26 @@ int payment_3()
     back2();
 }
 /*Payment End*/
+
+void printticket(char name[],int num_of_seats,int train_num,float charges)
+{
+	system("cls");
+	 if(num_of_seats>=5)
+    {
+
+        printf("\n\nYou can not buy more then 4 Tickets at one time. Please try again.");
+        getch();
+        system("CLS");
+        usrpurchase();
+    }
+	printf("-----------------------------------\n");
+	printf("\t   TICKET\n");
+	printf("-----------------------------------\n\n");
+	printf("Name:\t\t\t%s",name);
+	printf("\nNumber Of Seats:\t%d",num_of_seats);
+	printf("\nTrain Number:\t\t%d",train_num);
+	specifictrain(train_num);
+	printf("\nCharges:\t\t%.2f",charge);
+
+}
+
