@@ -2379,3 +2379,131 @@ void printdetails(char name[],int food_code,int item,float charges)
 	food_spec(food_code);
 	printf("\nCharges:\t\t%.2f",cost);
 }
+
+
+void food_spec(int food_code)
+{
+
+	if (food_code==101)
+	{
+		printf("\nFood: \t\t\tSpecial Naan With Chicken curry");
+		printf("\nUnit Price:\t\t90 Tk");
+	}
+
+	else if (food_code==102)
+	{
+		printf("\nFood: \t\t\tBrown bread with eggs");
+		printf("\nUnit Price:\t\t70 Tk");
+	}
+	else if (food_code==103)
+	{
+		printf("\nFood: \t\t\tPorota with special vegetable curry");
+		printf("\nUnit Price:\t\t40 Tk");
+	}
+	else if (food_code==104)
+	{
+		printf("\nFood: \t\t\tCreamy Omlates with bread ");
+		printf("\nUnit Price:\t\t50 Tk");
+	}
+	else if (food_code==105)
+	{
+		printf("\nFood: \t\t\tFried Rice with Chicken Carry  ");
+		printf("\nUnit Price:\t\t110 Tk");
+	}
+	else if (food_code==106)
+	{
+		printf("\nFood: \t\t\tFried rice with beef curry  ");
+		printf("\nUnit Price:\t\t140 Tk");
+	}
+
+	else if (food_code==107)
+	{
+		printf("\nFood: \t\t\tBhuna khichuri with egg  ");
+		printf("\nUnit Price:\t\t190 Tk");
+	}
+else if (food_code==108)
+	{
+		printf("\nFood: \t\t\tChicken Biriyani  ");
+		printf("\nUnit Price:\t\t130 Tk");
+	}
+else if (food_code==109)
+	{
+		printf("\nFood: \t\t\tBeef Biriyani  ");
+		printf("\nUnit Price:\t\t180 Tk");
+	}
+else if (food_code==110)
+	{
+		printf("\nFood: \t\t\tChicken Sorma Role  ");
+		printf("\nUnit Price:\t\t70 Tk");
+	}
+else if (food_code==111)
+	{
+		printf("\nFood: \t\t\tHandmade Chips   ");
+		printf("\nUnit Price:\t\t30 Tk");
+	}
+else if (food_code==112)
+	{
+		printf("\nFood: \t\t\tVegetable Role   ");
+		printf("\nUnit Price:\t\t30 Tk");
+	}
+	else if (food_code==113)
+	{
+		printf("\nFood: \t\t\tCup Cake   ");
+		printf("\nUnit Price:\t\t20 Tk");
+	}
+	else if (food_code==114)
+	{
+		printf("\nFood: \t\t\tPopcorn   ");
+		printf("\nUnit Price:\t\t10 Tk");
+	}
+	else if (food_code==115)
+	{
+		printf("\nFood: \t\t\tChocolate Box   ");
+		printf("\nUnit Price:\t\t25 Tk");
+	}
+	else if (food_code==116)
+	{
+		printf("\nFood: \t\t\tPotato Chips   ");
+		printf("\nUnit Price:\t\t15 Tk");
+	}
+	else if (food_code==117)
+	{
+		printf("\nFood: \t\t\tMineral Water(500ml)   ");
+		printf("\nUnit Price:\t\t15 Tk");
+	}
+	else if (food_code==118)
+	{
+		printf("\nFood: \t\t\tMineral Water(1 Liter)   ");
+		printf("\nUnit Price:\t\t20 Tk");
+	}
+	else if (food_code==119)
+	{
+		printf("\nFood: \t\t\tRed Te   ");
+		printf("\nUnit Price:\t\t10 Tk");
+	}
+	else if (food_code==120)
+	{
+		printf("\nFood: \t\t\tMilk Tea   ");
+		printf("\nUnit Price:\t\t15 Tk");
+	}
+	else if (food_code==121)
+	{
+		printf("\nFood: \t\t\tcoffee  ");
+		printf("\nUnit Price:\t\t30 Tk");
+	}
+	else if (food_code==122)
+	{
+		printf("\nFood: \t\t\tCold Drinks (250ml)  ");
+		printf("\nUnit Price:\t\t20 Tk");
+	}
+	else if (food_code==123)
+	{
+		printf("\nFood: \t\t\tCold Drinks (500ml)  ");
+		printf("\nUnit Price:\t\t35 Tk");
+	}
+	else if (food_code==124)
+	{
+		printf("\nFood: \t\t\tCold Drinks (1 Liter)   ");
+		printf("\nUnit Price:\t\t60 Tk");
+	}
+}
