@@ -801,3 +801,19 @@ void admin_purchase(void)
 	fclose(fp);
 	getch();
 }
+
+
+/*Ticket purchase list start*/
+int purchaselist()
+{
+    FILE *fp;
+   char buff[255];//creating char array to store data of file
+   fp = fopen("purchase.txt", "r");
+   while(fscanf(fp, "%s", buff)!=EOF){
+   printf("%s \n", buff);
+   }
+   fclose(fp);
+    back();
+
+}
+/*Ticket purchase list end*/
