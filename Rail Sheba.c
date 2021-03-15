@@ -937,3 +937,38 @@ int viwe_notice_admin()
     back();
 }
 /*Admin End*/
+
+int User_menu()
+{
+    printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t:::::::::       User Section       :::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+    printf("\t\t\t\t\t\tPress 1 to Log In \n");
+    printf("\t\t\t\t\t\tPress 2 to Registration \n");
+    printf("\t\t\t\t\t\tPress 3 to Go Back \n");
+
+  int ch;
+    printf("\n\n\t\t\t\t\t\tEnter your Choice: ");
+    scanf("%d", &ch);
+    switch(ch)
+    {
+    case 1:
+        user_login();
+        break;
+    case 2:
+        reg();
+        break;
+    case 3:
+        home();
+        break;
+    default:
+        printf("\a\n\t\t\t\t\t\tWrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back.");
+        getch();
+        system("CLS");
+        User_menu();
+
+    }
+}
