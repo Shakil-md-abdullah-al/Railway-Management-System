@@ -544,3 +544,32 @@ int add_t_list()
     Admin();
 }
 
+int tl_list()
+{
+    system("CLS");
+    FILE *fp = fopen("Add-Train-List.txt", "r");
+    char buff_train_list[255];
+
+    if(fp == NULL)
+    {
+       printf("Unable to open file!");
+       printf("Press any key to continue");
+       getch();
+       Admin();
+    }
+
+    printf("\t\t\t\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t\t\t\t::::::::::    Show Train List     ::::::::::\n");
+    printf("\t\t\t\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+
+    while(fgets(buff_train_list, sizeof(buff_train_list), fp) != NULL)
+        {
+            fputs(buff_train_list, stdout);
+            fputs("\n\n", stdout);
+        }
+    fclose(fp);
+    back();
+
+}
