@@ -865,3 +865,35 @@ struct comp
     char phone[20];
     char disc[700];
 };
+
+//Admin showing User complain list start
+ int User_Report()
+ {
+     system("cls");
+    FILE *fp = fopen("User_Complain.txt", "r");
+    char buff_comp[255];
+    struct comp add;
+
+    if(fp == NULL)
+    {
+       printf("\n\t\t\t\t\t\tUnable to open file!");
+       printf("\n\t\t\t\t\t\tPress any key to continue");
+       getch();
+       User();
+    }
+
+    printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::     User Complain     :::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+
+
+    while(fgets(buff_comp, sizeof(buff_comp), fp) != NULL)
+        {
+            fputs(buff_comp, stdout);
+            fputs("\n\n", stdout);
+        }
+    fclose(fp);
+    back();
+ }
