@@ -1577,3 +1577,15 @@ int payment_2()
 
     back2();
 }
+
+
+int payment_3()
+{
+    ccolor(26);
+	printf("\n\t"); ccolor(240);
+	printf("\n\t\t\t\tWe have received your request. We will be there within  10 mint. Be patience!");ccolor(26);
+	printf("\n\t"); ccolor(07);
+
+    back2();
+}
+/*Payment End*/
