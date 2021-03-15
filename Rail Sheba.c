@@ -571,5 +571,4 @@ int tl_list()
         }
     fclose(fp);
     back();
-
 }
