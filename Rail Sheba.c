@@ -724,3 +724,9 @@ int ticketPurchase()
 
     }
 }
+
+typedef struct{
+	char name[50];
+	int train_num;
+	int num_of_seats;
+}fs;
