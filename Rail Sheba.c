@@ -1038,3 +1038,43 @@ int User()
 }
 }
 /*User End*/
+
+/*Train Information Start*/
+int train_information()
+{
+    system("CLS");//Clear Window
+    printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::   Train Information    ::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+    printf("\n\n\t\t\t\t\t\tEnter Your Choice: ");
+    printf("\n\n\t\t\t\t\t\t1.Train Schedule\n");
+    printf("\t\t\t\t\t\t2.Train List\n");
+    printf("\t\t\t\t\t\t3.Back\n");
+
+   int ch;
+    printf("\n\t\t\t\t\t\tEnter your Choice: ");
+    scanf("%d", &ch);
+    switch(ch)
+    {
+    case 1:
+        tu_list();
+        break;
+    case 2:
+        user_tlist();
+        break;
+    case 3:
+        User();
+        break;
+    default:
+        printf("\a\n\t\t\t\t\t\tWrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back.");
+        getch();
+        system("CLS");
+        train_information();
+
+    }
+
+}
+/*Train Information End*/
