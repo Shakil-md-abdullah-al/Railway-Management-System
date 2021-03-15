@@ -1,0 +1,27 @@
+		Code: 701	|  Name: Subarna Express	|  Destination: Dhaka to Chittagong	|  Time: 9:30am 	|  Off-Day: Monday	|  Price: 750 Tk
+                
+                Code: 711	|  Name: Subarna Express	|  Destination: Chittagong To Dhaka	|  Time: 12:00pm	|  Off-Day: Monday	|  Price: 750 Tk
+
+                Code: 703	|  Name: Tista Express	        |  Destination: Dhaka To Dewangonj	|  Time: 8:30am 	|  Off-Day: No Off Day	|  Price: 790 Tk
+
+                Code: 713	|  Name: Tista Express	        |  Destination: Dewangonj To Dhaka	|  Time: 4:30pm 	|  Off-Day: No Off Day	|  Price: 790 Tk
+
+                Code: 705	|  Name: Kapotaskh Express	|  Destination: Dhaka To Rajhshahi	|  Time: 7:30am 	|  Off-Day: Thursday	|  Price: 730 Tk
+
+                Code: 715	|  Name: Kapotaskh Express	|  Destination: Rajhshahi To Dhaka	|  Time: 10:30pm	|  Off-Day: Thursday	|  Price: 730 Tk
+
+                Code: 707	|  Name: Panchagarh Express	|  Destination: Dhaka To Panchagarh	|  Time: 9:00am 	|  Off-Day: Sunday	|  Price: 760 Tk
+
+                Code: 717	|  Name: Panchagarh Express	|  Destination: Panchagarh To Dhaka	|  Time: 10:30pm	|  Off-Day: Sunday	|  Price: 760 Tk
+
+                Code: 711	|  Name: Chittra Express	|  Destination: Dhaka To Khulna 	|  Time: 6:30am 	|  Off-Day: Wednesday	|  Price: 780 Tk 
+
+                Code: 731	|  Name: Chittra Express	|  Destination: Khulna To Dhaka 	|  Time: 5:30pm 	|  Off-Day: Wednesday	|  Price: 780 Tk 
+
+                Code: 712	|  Name: Moitree Express	|  Destination: Dhaka To Kolkata	|  Time: 6:30am  	|  Off-Day: Tuesday	|  Price: 740 Tk 
+
+                Code: 733	|  Name: Moitree Express	|  Destination: Kolkata To Dhaka	|  Time: 6:30am 	|  Off-Day: Tuesday	|  Price: 740 Tk 
+
+                Code: 720	|  Name: Upaban Express	        |  Destination: Dhaka To Sylhet	        |  Time: 9:30pm	        |  Off-Day: No Off Day	|  Price: 770 Tk 
+
+                Code: 734	|  Name: Upaban Express	        |  Destination: Sylhet To Dhaka	        |  Time: 10:30am 	|  Off-Day: No Off Day	|  Price: 770 Tk 
