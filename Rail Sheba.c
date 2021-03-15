@@ -349,5 +349,4 @@ int t_list()
         }
     fclose(fp);
     back();
-
 }
