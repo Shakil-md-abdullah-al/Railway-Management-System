@@ -1180,3 +1180,37 @@ int view_list()
     printf("\n\t\t\t734\tUpaban Express\t\tSylhet To Dhaka\t\tTk.770\t\t\t10:30am");
     printf("\n\n");
 }
+
+
+/*Buy Ticket Start*/
+int buy_ticket()
+{
+  system("CLS");//Clear Window
+    printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::       Buy Ticket      :::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+  printf("\t\t\t\t\t\t1. Buy Now\n");
+  printf("\t\t\t\t\t\t2. Back\n");
+
+  int ch;
+    printf("\n\t\t\t\t\t\tEnter your Choice: ");
+    scanf("%d", &ch);
+    switch(ch)
+    {
+    case 1:
+         usrpurchase();
+        break;
+    case 2:
+        User();
+        break;
+    default:
+        printf("\a\n\t\t\t\t\t\tWrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back.");
+        getch();
+        system("CLS");
+        buy_ticket();
+    }
+back2();
+}
