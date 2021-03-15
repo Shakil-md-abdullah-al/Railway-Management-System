@@ -41,7 +41,7 @@ int home()
     }
 
 }
-
+//Add Comment
 /*Home End*/
 
 
@@ -3351,7 +3351,7 @@ int about()
      printf("\n\n");
      printf("\t\t\t\t\t\tRail Sheba\n");
      printf("\t\t\t\t\t\tVersion 1.0\n");
-     printf("\t\t\t\t\t\t© All Rights Reserved by INFINITY-2021\n");
+     printf("\t\t\t\t\t\tÂ© All Rights Reserved by INFINITY-2021\n");
 
     printf("\n\t\t\t\t\t\t1. Visit our Website\n");
     printf("\t\t\t\t\t\t2.Back\n");
