@@ -215,3 +215,55 @@ int Admin()
     }
 }
 /* Admin Option End*/
+
+/*Train Schedule Start*/
+/*Train Schedule font page Start*/
+int train_Schedule()
+{
+    system("CLS");//Clear Window
+    printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t:::::     Upcoming Train Schedule      :::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+
+    printf("\t\t\t\t\t\t1. Add/Update Info \n");
+    printf("\t\t\t\t\t\t2. Show Train List \n");
+    printf("\t\t\t\t\t\t3. Delete Info\n");
+    printf("\t\t\t\t\t\t4. Admin Section\n");
+    printf("\t\t\t\t\t\t5. Home\n");
+
+
+
+    int ch;
+    printf("\n\t\t\t\t\t\tEnter your Choice: ");
+    scanf("%d", &ch);
+    switch(ch)
+    {
+    case 1:
+        add_train_list();
+        break;
+    case 2:
+        t_list();
+        break;
+    case 3:
+         del_train_list();
+        break;
+    case 4:
+         Admin();
+        break;
+    case 5:
+         home();
+        break;
+
+    default:
+        printf("\a\n\t\t\t\t\t\tWrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back.");
+        getch();
+        system("CLS");
+        train_Schedule();
+
+    }
+
+}
+/*Train Schedule font page End*/
