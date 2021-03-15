@@ -2367,3 +2367,15 @@ int cost(int food_code,int item)
 
 }
 
+void printdetails(char name[],int food_code,int item,float charges)
+{
+	system("cls");
+	printf("-----------------------------------\n");
+	printf("\t   Total Amount\n");
+	printf("-----------------------------------\n\n");
+	printf("Name:\t\t\t%s",name);
+	printf("\nFood Code:\t\t%d",food_code);
+	printf("\nQuantity:\t\t%d",item);
+	food_spec(food_code);
+	printf("\nCharges:\t\t%.2f",cost);
+}
