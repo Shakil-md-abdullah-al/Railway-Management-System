@@ -681,3 +681,46 @@ int del_tl_list()
 
     return 0;
 }
+
+
+
+/*Train List End*/
+
+
+/*Ticket Purchase Start*/
+int ticketPurchase()
+{
+    printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::    Ticket Purchase    :::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+    printf("\n\t\t\t\t\t\t1. Purchase \n");
+    printf("\t\t\t\t\t\t2. Admin Section\n");
+    printf("\t\t\t\t\t\t3. Home\n");
+
+
+
+    int ch;
+    printf("\n\t\t\t\t\t\tEnter your Choice: ");
+    scanf("%d", &ch);
+    switch(ch)
+    {
+    case 1:
+        admin_purchase();
+        break;
+    case 2:
+         Admin();
+        break;
+    case 3:
+        home();
+        break;
+    default:
+        printf("\a\n\t\t\t\t\t\tWrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back. ");
+        getch();
+        system("CLS");
+        ticketPurchase();
+
+    }
+}
