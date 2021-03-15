@@ -2,3 +2,8 @@ Name: AKM Khan
 Number of Seats: 2
 Train Number: 701
 Cost: 1560
+
+Name: Mizanur Rahman
+Number of Seats: 1
+Train Number: 711
+Cost: 780
