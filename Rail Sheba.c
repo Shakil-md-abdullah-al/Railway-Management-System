@@ -2521,3 +2521,19 @@ int breakfast_list()
 	printf("\n\t\t\t104\tCreamy Omlates with bread \t\t  50\t\t   01\n");
     printf("\n\n");
 }
+
+int lunch_list()
+{
+    //Train list by file
+    system("CLS");
+    system("cls");
+	printf("\t\t\t---------------------------------------------------------");
+	printf("\n\t\t\tItem No.\tFood Name\t\t\tCharges\n");
+	printf("\t\t\t---------------------------------------------------------");
+	printf("\n\t\t\t105\tFried Rice with Chicken Carry \t\t\ 110\n");
+	printf("\n\t\t\t106\tFried rice with beef curry \t\t 140\n");
+	printf("\n\t\t\t107\tBhuna khichuri with egg \t\t 90\n");
+	printf("\n\t\t\t108\tChicken Biriyani \t\t\t 130\n");
+	printf("\n\t\t\t109\tBeef Biriyani \t\t\t\t 180\n");
+    printf("\n\n");
+}
