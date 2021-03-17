@@ -3095,6 +3095,61 @@ void user_login(void)
                   user_login();
                 }
             }
+}
 
 
+int reg()
+{
+    system("cls");
+    FILE *fp;
+    char uName[30], pwd[30];int i;char c;
+    char fname[80],phone[15],email[50],nid[20],dob[30];
+
+    pUser=(struct log *)malloc(sizeof(struct log));
+    printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::   Registration Menu   :::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+     do
+            {
+                if ( ( fp=fopen("user_info.dat", "a+")) == NULL) {
+                    if ( ( fp=fopen("user_info.dat", "w+")) == NULL) {
+                        printf ("\n\t\t\t\t\t\tCould not open file\n");
+                        printf("\n\t\t\t\t\t\tPress any key to continue");
+                        getch();
+                        home();
+                    }
+                }
+                fgets(fname, 80, stdin);//bug
+                printf("\n\t\t\t\t\t\tFull Name: ");
+                gets(pUser->fname);
+                printf("\n\t\t\t\t\t\tPhone Number : ");
+                gets(pUser->phone);
+                printf("\n\t\t\t\t\t\tEmail Address: ");
+                gets(pUser->email);
+                printf("\n\t\t\t\t\t\tEnter Date of Birth: ");
+                gets(pUser->dob);
+                printf("\n\t\t\t\t\t\tYour NID Number (13/17 Digit): ");
+                gets(pUser->nid);
+                printf("\n\t\t\t\t\t\tChoose A User_Name: ");
+                scanf("%9s",pUser->username);
+                printf("\n\t\t\t\t\t\tChoose A Password: ");
+                scanf("%9s",pUser->password);
+                fwrite (pUser, sizeof(struct log), 1, fp);
+                //printf("\n\t\t\tYour Information: \n");
+                //fprintf(fp,"Name: %s\nPhone: %s\nEmail: %s\nNID: %s tk\nDate of Birth: %s\nUsername:%s,\nPassword:%s", pUser->fname, pUser->phone, pUser->email,pUser->nid,pUser->dob,pUser->username, pUser->password);
+                //show_item();
+                fclose(fp);
+                printf("\n\n");
+                printf("\n\t\t\t\t\t\tWould You Like To Add Another Account? (Y/N): ");
+                scanf(" %c",&c);//skip leading whitespace
+
+
+            }while(c=='Y'||c=='y');
+            if (c=='N'||c=='n')
+            {
+                system("CLS");
+                User_menu();
+            }
 }
