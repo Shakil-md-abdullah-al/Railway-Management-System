@@ -2662,3 +2662,43 @@ int User_Complain_Contact()
         User_Complain_Contact();
         }
 }
+
+int usr_helpline()
+{
+   system("cls");
+        printf("\n\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+        printf("\t\t\t\t\t\t::                                        ::\n");
+        printf("\t\t\t\t\t\t::::::::::       Helpline     ::::::::::::::\n");
+        printf("\t\t\t\t\t\t::                                        ::\n");
+        printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n");
+        printf("\n\n\t\t\t\t\t\t\tFeel Free to Contact To Us\n");
+        printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::\n");
+
+
+
+        printf("\n\t\t\t\t\t\tPolice\t\t :%s\n","999");
+        printf("\n\t\t\t\t\t\tMedical\t\t : %s\n","16247");
+        printf("\n\t\t\t\t\t\tFire-Service\t : %s\n","121");
+        printf("\n\t\t\t\t\t\tNational Emergency Number: %s\n\n","121");
+        printf("\n\t\t\t\t\t\tTelephone: %s\n","+88025003825");
+        printf("\n\t\t\t\t\t\tHotline: %s\n","167222");
+        printf("\n\t\t\t\t\t\tEmail: %s\n","help@railsheba.gov.bd\n");
+
+        printf("\n\t\t\t\t\t\t                Account Section\n");
+        printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+        printf("\n\t\t\t\t\t\tMobile Number: %s\n","+8801959981909");
+        printf("\n\t\t\t\t\t\tEmail Address: %s\n","account.section@railsheba.gov.bd\n");
+
+
+        printf("\n\t\t\t\t\t\t                General Section\n");
+        printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+        printf("\n\t\t\t\t\t\tMobile Number: %s\n","+8801784918947");
+        printf("\n\t\t\t\t\t\tEmail Address: %s\n","g.section@railsheba.gov.bd\n");
+
+        printf("\n\t\t\t\t\t\t             Train Schedule Scetion\n");
+        printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+        printf("\n\t\t\t\t\t\tMobile Number: %s\n","+8801794300754");
+        printf("\n\t\t\t\t\t\tEmail Address: %s\n","ts.section@railsheba.gov.bd\n");
+
+        back2();
+}
