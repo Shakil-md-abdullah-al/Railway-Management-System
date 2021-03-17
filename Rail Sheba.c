@@ -3319,3 +3319,36 @@ int option()
         option();
     }
 }
+
+int about()
+{
+     printf("\n\n");
+     printf("\t\t\t\t\t\tRail Sheba\n");
+     printf("\t\t\t\t\t\tVersion 1.0\n");
+     printf("\t\t\t\t\t\t© All Rights Reserved by INFINITY-2021\n");
+
+    printf("\n\t\t\t\t\t\t1. Visit our Website\n");
+    printf("\t\t\t\t\t\t2.Back\n");
+
+
+     int ch;
+    printf("\n\t\t\t\t\t\tEnter Your Choice:");
+    printf("\t\t\t\t\t\t");
+    scanf("%d", &ch);
+     switch(ch)
+    {
+    case 1:
+       website();
+        break;
+    case 2:
+        home();
+        break;
+     default:
+        printf("Wrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back.");
+        getch();
+        system("CLS");
+        about();
+    }
+}
+
