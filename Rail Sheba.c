@@ -3264,3 +3264,26 @@ int Logout()
     system("CLS");
     home();
 }
+
+int DisplayResourceNAMessageBox3()
+{
+    int msgboxID = MessageBox(
+        0,"Are You Want to Log Out?","Logout",MB_ICONQUESTION | MB_YESNO | MB_DEFBUTTON1
+    );
+
+    switch (msgboxID)
+    {
+    case IDYES:
+        {
+            home();
+        }
+        // TODO: add code
+        break;
+    case IDNO:
+        User();
+        break;
+    }
+
+    return msgboxID;
+}
+
