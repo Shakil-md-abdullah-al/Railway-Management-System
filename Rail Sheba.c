@@ -2967,3 +2967,29 @@ int del_notice()
     }
  }
  /*Back Function End*/
+
+/*Back Function Start*/
+ int back2()
+ {
+    printf("\n\t\t\t\t\t\t1. User Section \n");
+    printf("\t\t\t\t\t\t2. Home \n");
+   int ch;
+    printf("\n\t\t\t\t\t\tEnter your Choice: ");
+    scanf("%d", &ch);
+    switch(ch)
+    {
+    case 1:
+        User();
+        break;
+    case 2:
+        home();
+        break;
+    default:
+        printf("\a\n\t\t\t\t\t\tWrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back.");
+        getch();
+        system("CLS");
+        back2();
+    }
+ }
+ /*Back Function End*/
