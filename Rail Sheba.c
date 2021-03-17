@@ -2789,3 +2789,19 @@ int NoticeBoard()
         NoticeBoard();
         }
 }
+
+int add_notice()
+{
+    FILE *fptr;
+    fptr = fopen("Notice.txt", "a");
+    struct notice ntc;
+
+    gets(ntc.notice_no);
+    printf("\n\t\t\t\t\t\tEnter Notice Number: "); gets(ntc.notice_no);
+    printf("\t\t\t\t\t\tWrite Notice Below 100 words: "); scanf("%[^\n]%*c", ntc.notice_desc);
+
+    fprintf(fptr,"\t\t\t\t\t\tNotice No: %s\n\t\t\t\t\t\tNotice: %s\n", ntc.notice_no, ntc.notice_desc);
+    //tl_list();
+    fclose(fptr);
+    back2();
+}
