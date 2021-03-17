@@ -2702,3 +2702,20 @@ int usr_helpline()
 
         back2();
 }
+
+int Report()
+{
+    FILE *fptr;
+    fptr = fopen("User_Complain.txt", "a");
+    struct comp add;
+
+    gets(add.name);
+    printf("\n\t\t\t\t\t\tEnter Your Name: "); gets(add.name);
+    printf("\t\t\t\t\t\tEnter Your Phone Number: "); scanf("%[^\n]%*c", add.phone);
+    printf("\t\t\t\t\t\tWrite your  complain Below 100 words: "); scanf("%[^\n]%*c", add.disc);
+
+    fprintf(fptr,"\t\t\t\t\t\tName: %s\n\t\t\t\t\t\tPhone no: %s\n\t\t\t\t\t\tComplain: %s\n", add.name, add.phone, add.disc);
+    //tl_list();
+    fclose(fptr);
+    back2();
+}
