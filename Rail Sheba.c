@@ -3352,3 +3352,13 @@ int about()
     }
 }
 
+int website()
+{
+    system("explorer https://sites.google.com/view/rail-sheba");
+    return 0;
+}
+/*Option End*/
+int login()
+{
+
+}
