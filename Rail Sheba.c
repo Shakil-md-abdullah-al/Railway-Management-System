@@ -2719,3 +2719,32 @@ int Report()
     fclose(fptr);
     back2();
 }
+
+int My_Report()
+{
+    system("cls");
+    FILE *fp = fopen("User_Complain.txt", "r");
+    char buff_comp[255];
+
+    if(fp == NULL)
+    {
+       printf("Unable to open file!");
+       printf("Press any key to continue");
+       getch();
+       User();
+    }
+
+    printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::      My Complain      :::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+
+    while(fgets(buff_comp, sizeof(buff_comp), fp) != NULL)
+        {
+            fputs(buff_comp, stdout);
+            fputs("\n\n", stdout);
+        }
+    fclose(fp);
+    back2();
+}
