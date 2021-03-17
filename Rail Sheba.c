@@ -2616,3 +2616,49 @@ int general()
 
 }
 /*General Setting End*/
+/*My account End*/
+
+/* Complain Start*/
+
+/* Complain End*/
+int User_Complain_Contact()
+{
+        system("cls");
+        printf("\n\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+        printf("\t\t\t\t\t\t::                                        ::\n");
+        printf("\t\t\t\t\t\t::::::::::       Complain  :::::::::::::::::\n");
+        printf("\t\t\t\t\t\t::                                        ::\n");
+        printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n");
+        printf("\n\n\t\t\t\t\t\t\tFeel Free to Contact To Us\n");
+        printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::\n");
+
+
+        printf("\n\n\n\t\t\t\t\t\t1.Report a Complain\n");
+        printf("\n\t\t\t\t\t\t2.My complain\n");
+        printf("\n\t\t\t\t\t\t3.User\n");
+        printf("\n\t\t\t\t\t\t4.Home\n");
+
+        int ch;
+        printf("\n\n\n\t\t\t\t\t\tEnter Your Choice: ");
+        scanf("%d", &ch);
+        switch(ch)
+        {
+        case 1:
+            Report();
+            break;
+        case 2:
+            My_Report();
+            break;
+        case 3:
+            User();
+            break;
+        case 4:
+            home();
+        default:
+        printf("\a\n\t\t\t\t\t\tWrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back.");
+        getch();
+        system("CLS");
+        User_Complain_Contact();
+        }
+}
