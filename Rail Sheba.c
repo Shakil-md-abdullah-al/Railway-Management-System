@@ -2942,3 +2942,28 @@ int del_notice()
 
     return 0;
 }
+
+ int back()
+ {
+    printf("\n\t\t\t\t\t\t1. Admin Section\n");
+    printf("\t\t\t\t\t\t2. Home \n");
+   int ch;
+    printf("\n\t\t\t\t\t\tEnter your Choice: ");
+    scanf("%d", &ch);
+    switch(ch)
+    {
+    case 1:
+        Admin();
+        break;
+    case 2:
+        home();
+        break;
+    default:
+        printf("\a\n\t\t\t\t\t\tWrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back.");
+        getch();
+        system("CLS");
+        back();
+    }
+ }
+ /*Back Function End*/
