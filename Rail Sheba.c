@@ -4,7 +4,6 @@
 #include<time.h>
 #include<windows.h>
 
-
 /*Home Start*/
 int home()
 {
@@ -42,7 +41,10 @@ int home()
     }
 
 }
+
 /*Home End*/
+
+
 
 //Display File all Content
 int print_file(FILE *fptr)
@@ -117,7 +119,6 @@ int replace_row(char filename[], int delete_line)
 
     fclose(main_file);
 }
-
 /*Admin Start*/
 /*Admin Menu Start*/
 int Admin_menu()
@@ -214,6 +215,8 @@ int Admin()
 
     }
 }
+
+
 /* Admin Option End*/
 
 /*Train Schedule Start*/
@@ -314,6 +317,7 @@ int add_train_list()
 }
 
 
+
 int t_list()
 {
     system("CLS");
@@ -349,6 +353,7 @@ int t_list()
         }
     fclose(fp);
     back();
+
 }
 
 
@@ -461,6 +466,9 @@ int del_train_list()
 }
 
 
+
+/*Upcoming Train List End*/
+
 /*Train List Start*/
 int train_list()
 {
@@ -509,8 +517,6 @@ int train_list()
 
 }
 
-/*Upcoming Train List End*/
-
 /*Final Train List*/
 int add_t_list()
 {
@@ -544,6 +550,8 @@ int add_t_list()
     Admin();
 }
 
+
+
 int tl_list()
 {
     system("CLS");
@@ -571,8 +579,8 @@ int tl_list()
         }
     fclose(fp);
     back();
-}
 
+}
 
 int del_tl_list()
 {
@@ -723,14 +731,13 @@ int ticketPurchase()
         ticketPurchase();
 
     }
-}
 
+}
 typedef struct{
 	char name[50];
 	int train_num;
 	int num_of_seats;
 }fs;
-
 
 void admin_purchase(void)
 {
@@ -814,9 +821,14 @@ int purchaselist()
    }
    fclose(fp);
     back();
+
 }
 /*Ticket purchase list end*/
 
+
+/*return request start*/
+/*return request end*/
+/*Ticket Purchase end*/
 
 /*Complain Start*/
 int Complain_Contact()
@@ -859,13 +871,13 @@ int Complain_Contact()
 back();
 }
 
+
 struct comp
 {
     char name[85];
     char phone[20];
     char disc[700];
 };
-
 //Admin showing User complain list start
  int User_Report()
  {
@@ -898,13 +910,12 @@ struct comp
     back();
  }
 
+
 struct notice
 {
     char notice_no[50];
     char notice_desc[700];
 };
-
-
 int viwe_notice_admin()
 {
      system("cls");
@@ -936,7 +947,12 @@ int viwe_notice_admin()
     fclose(fp);
     back();
 }
-/*Admin End*/
+
+
+
+
+
+ /*Admin End*/
 
 int User_menu()
 {
@@ -972,7 +988,6 @@ int User_menu()
 
     }
 }
-
 /*User Start*/
 
 int User()
@@ -1078,7 +1093,6 @@ int train_information()
 
 }
 /*Train Information End*/
-
 int tu_list()
 {
     system("CLS");
@@ -1117,7 +1131,6 @@ int tu_list()
 
 }
 /*Train List start*/
-
 int user_tlist()
 {
     //Train list by file
@@ -1180,8 +1193,6 @@ int view_list()
     printf("\n\t\t\t734\tUpaban Express\t\tSylhet To Dhaka\t\tTk.770\t\t\t10:30am");
     printf("\n\n");
 }
-
-
 /*Buy Ticket Start*/
 int buy_ticket()
 {
@@ -1426,8 +1437,9 @@ int charge(int train_num,int num_of_seats)
 	{
 		printf("\t\t\t%f",770.0*4);
 	}
-}
 
+
+}
 
 int payment()
 {
@@ -1543,8 +1555,6 @@ printf("\n\t"); ccolor(240);
  back2();
  system("CLS");
 }
-
-
 /* Card Paymment*/
 
 int payment_2()
@@ -1578,7 +1588,6 @@ int payment_2()
     back2();
 }
 
-
 int payment_3()
 {
     ccolor(26);
@@ -1609,6 +1618,8 @@ void printticket(char name[],int num_of_seats,int train_num,float charges)
 	printf("\nTrain Number:\t\t%d",train_num);
 	specifictrain(train_num);
 	printf("\nCharges:\t\t%.2f",charge);
+
+
 
 }
 
@@ -1742,8 +1753,9 @@ int food_ct()
 
     }
 
-}
 
+
+}
 
 /*Structure for food Start*/
 struct food{
@@ -1829,7 +1841,6 @@ void foodpurchase(void)
 	fclose(fp);
 	getch();
 }
-
 
 int cost(int food_code,int item)
 {
@@ -2367,6 +2378,8 @@ int cost(int food_code,int item)
 
 }
 
+
+
 void printdetails(char name[],int food_code,int item,float charges)
 {
 	system("cls");
@@ -2379,7 +2392,6 @@ void printdetails(char name[],int food_code,int item,float charges)
 	food_spec(food_code);
 	printf("\nCharges:\t\t%.2f",cost);
 }
-
 
 void food_spec(int food_code)
 {
@@ -2506,7 +2518,9 @@ else if (food_code==112)
 		printf("\nFood: \t\t\tCold Drinks (1 Liter)   ");
 		printf("\nUnit Price:\t\t60 Tk");
 	}
+
 }
+
 
 int breakfast_list()
 {
@@ -2573,6 +2587,7 @@ int drink_list()
     printf("\n\n");
 }
 
+
 /*My account Start*/
 int user_account()
 {
@@ -2604,7 +2619,6 @@ int user_account()
     }
 }
 
-
 /*General Setting Start*/
 int general()
 {
@@ -2616,6 +2630,7 @@ int general()
 
 }
 /*General Setting End*/
+
 /*My account End*/
 
 /* Complain Start*/
@@ -2719,7 +2734,6 @@ int Report()
     fclose(fptr);
     back2();
 }
-
 int My_Report()
 {
     system("cls");
@@ -2748,6 +2762,8 @@ int My_Report()
     fclose(fp);
     back2();
 }
+
+/*Back Function Start*/
 
 int NoticeBoard()
 {
@@ -2789,7 +2805,6 @@ int NoticeBoard()
         NoticeBoard();
         }
 }
-
 int add_notice()
 {
     FILE *fptr;
@@ -2805,6 +2820,7 @@ int add_notice()
     fclose(fptr);
     back2();
 }
+
 
 int view_notice()
 {
@@ -2834,6 +2850,7 @@ int view_notice()
     fclose(fp);
     back2();
 }
+
 
 int del_notice()
 {
@@ -2968,7 +2985,7 @@ int del_notice()
  }
  /*Back Function End*/
 
-/*Back Function Start*/
+ /*Back Function Start*/
  int back2()
  {
     printf("\n\t\t\t\t\t\t1. User Section \n");
@@ -3017,7 +3034,8 @@ int del_notice()
     return msgboxID;
 }
 
- int DisplayResourceNAMessageBox2()
+
+    int DisplayResourceNAMessageBox2()
 {
     int msgboxID = MessageBox(
         0,"Want to Exit?","Exit",MB_ICONQUESTION | MB_OKCANCEL | MB_DEFBUTTON1
@@ -3053,7 +3071,6 @@ char dd[5],mm[12];
 int yy[10];
 
 }*pUser;
-
 
 void user_login(void)
 {
@@ -3095,6 +3112,8 @@ void user_login(void)
                   user_login();
                 }
             }
+
+
 }
 
 
@@ -3188,6 +3207,8 @@ int usr_details()
 
 }
 
+
+
 int show_item()
 {
    FILE *fp = fopen("user_info.dat", "r");
@@ -3213,6 +3234,7 @@ int show_item()
     fclose(fp);
 
 }
+
 int admin_details()
 {
    FILE *fp;
@@ -3241,6 +3263,7 @@ int admin_details()
 
 }
 
+
 void admin_login(void){
     char uName[30], pwd[30];int i;char c;
         printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
@@ -3259,12 +3282,12 @@ void admin_login(void){
             }
 }
 
+
 int Logout()
 {
     system("CLS");
     home();
 }
-
 int DisplayResourceNAMessageBox3()
 {
     int msgboxID = MessageBox(
@@ -3286,6 +3309,9 @@ int DisplayResourceNAMessageBox3()
 
     return msgboxID;
 }
+
+
+
 
 /*Option Start*/
 int option()
@@ -3371,7 +3397,6 @@ void ccolor(int clr)
 	SetConsoleTextAttribute(hConsole, clr);
 
 }
-
 int main()
 {
     system("color 07");
