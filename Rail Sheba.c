@@ -3040,3 +3040,16 @@ int del_notice()
 }
 
  /*Exit End*/
+
+struct log{
+char fname[80];
+char email[50];
+char phone[15];
+char nid[20];
+char password[32];
+char username[30];
+char dob[20];
+char dd[5],mm[12];
+int yy[10];
+
+}*pUser;
