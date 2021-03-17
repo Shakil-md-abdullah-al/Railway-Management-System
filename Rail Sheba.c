@@ -2748,3 +2748,44 @@ int My_Report()
     fclose(fp);
     back2();
 }
+
+int NoticeBoard()
+{
+    system("cls");
+        printf("\n\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+        printf("\t\t\t\t\t\t::                                        ::\n");
+        printf("\t\t\t\t\t\t:::::::::::       Notice  ::::::::::::::::::\n");
+        printf("\t\t\t\t\t\t::                                        ::\n");
+        printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n");
+
+
+        printf("\n\n\n\t\t\t\t\t\t1.Add Notice\n");
+        printf("\n\t\t\t\t\t\t2.View Notice\n");
+        printf("\n\t\t\t\t\t\t3.Delete Notice\n");
+        printf("\n\t\t\t\t\t\t4.Back\n");
+
+        int ch;
+        printf("\n\n\n\t\t\t\t\t\tEnter Your Choice: ");
+        scanf("%d", &ch);
+        switch(ch)
+        {
+        case 1:
+            add_notice();
+            break;
+        case 2:
+            view_notice();
+            break;
+        case 3:
+            del_notice();
+            break;
+        case 4:
+            Admin();
+            break;
+        default:
+        printf("\a\n\t\t\t\t\t\tWrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back.");
+       getch();
+        system("CLS");
+        NoticeBoard();
+        }
+}
