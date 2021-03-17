@@ -2572,3 +2572,34 @@ int drink_list()
 	printf("\n\t\t\t124\tCold Drinks (1 Liter) \t\t\t  60\n");
     printf("\n\n");
 }
+
+/*My account Start*/
+int user_account()
+{
+    system("CLS");//Clear Window
+    printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::       My Account      :::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n");
+    printf("\n\t\t\t\t\t\t1. General \n");
+    printf("\t\t\t\t\t\t2. Back \n");
+   int ch;
+    printf("\n\t\t\t\t\t\tEnter your Choice: ");
+    scanf("%d", &ch);
+    switch(ch)
+    {
+    case 1:
+        general();
+        break;
+    case 2:
+        User();
+        break;
+    default:
+        printf("\a\n\t\t\t\t\t\tWrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back.");
+        getch();
+        system("CLS");
+        user_account();
+    }
+}
