@@ -3240,3 +3240,21 @@ int admin_details()
             home();
 
 }
+
+void admin_login(void){
+    char uName[30], pwd[30];int i;char c;
+        printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+        printf("\t\t\t\t\t\t::                                        ::\n");
+        printf("\t\t\t\t\t\t::::::::::      Login Menu       :::::::::::\n");
+        printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+
+            printf("\n\t\t\t\t\t\tEnter Your User_Name: ");
+            scanf("%s",uName);
+            printf("\n\t\t\t\t\t\tEnter Your Password: ");
+            scanf("%s",pwd);
+          while(( strcmp(uName,"Shakil")==0 && strcmp(pwd,"1234")==0)||( strcmp(uName,"Rashad")==0 && strcmp(pwd,"1234")==0)||( strcmp(uName,"Shovon")==0 && strcmp(pwd,"1234")==0)||( strcmp(uName,"Meer")==0 && strcmp(pwd,"1234")==0))
+            {
+                        Admin();
+            }
+}
