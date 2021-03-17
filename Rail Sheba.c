@@ -3213,3 +3213,30 @@ int show_item()
     fclose(fp);
 
 }
+int admin_details()
+{
+   FILE *fp;
+
+    pUser=(struct log *)malloc(sizeof(struct log));
+
+    if ( ( fp=fopen("user_info.dat", "r+")) == NULL) {
+                if ( ( fp=fopen("user_info.dat", "w+")) == NULL) {
+                    printf ("\n\t\t\t\t\t\tCould not open file\n");
+                    printf("\n\t\t\t\t\t\tPress any key to continue");
+                    getch();
+                    home();
+                }
+            }
+             while ( fread (pUser, sizeof(struct log), 1, fp) == 1) {
+                printf("\n\t\t\t\t\t\tName: %s",pUser->fname);
+                printf("\n\t\t\t\t\t\tEmail: %s",pUser->email);
+                printf("\n\t\t\t\t\t\tNID: %s",pUser->nid);
+            }
+
+            fclose(fp);
+
+            printf("\n\t\t\t\t\t\tPress Any key to Go home.... ");
+            getch();
+            home();
+
+}
