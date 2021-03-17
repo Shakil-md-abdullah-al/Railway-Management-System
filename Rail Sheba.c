@@ -3053,3 +3053,48 @@ char dd[5],mm[12];
 int yy[10];
 
 }*pUser;
+
+
+void user_login(void)
+{
+    FILE *fp;
+    char uName[30], pwd[30];int i;char c;
+
+    pUser=(struct log *)malloc(sizeof(struct log));
+    printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::      Login Menu       :::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+    if ( ( fp=fopen("user_info.dat", "r+")) == NULL) {
+                if ( ( fp=fopen("user_info.dat", "w+")) == NULL) {
+                    printf ("\n\t\t\t\t\t\tCould not open file\n");
+                    printf("\n\t\t\t\t\t\tPress any key to continue");
+                    getch();
+                    home();
+                }
+            }
+            printf("\n\t\t\t\t\t\tUser_Name: ");
+            scanf("%s",uName);
+            printf("\n\t\t\t\t\t\tPassword: ");
+            scanf("%s",pwd);
+             while ( fread (pUser, sizeof(struct log), 1, fp) == 1) {
+                if( strcmp ( pUser->username, uName) == 0) {
+                    if( strcmp ( pUser->password, pwd) == 0) {
+                            User();
+
+                    }
+                    User();
+                }
+
+                  else
+                {
+                  printf("\n\t\t\t\tInvalid Username or Password. Please Try again....\n");
+                  getch();
+                  printf("\n\n");
+                  user_login();
+                }
+            }
+
+
+}
