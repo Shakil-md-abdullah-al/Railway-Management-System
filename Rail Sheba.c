@@ -2805,3 +2805,32 @@ int add_notice()
     fclose(fptr);
     back2();
 }
+
+int view_notice()
+{
+    system("cls");
+    FILE *fp = fopen("Notice.txt", "r");
+    char buff_notice[255];
+
+    if(fp == NULL)
+    {
+       printf("Unable to open file!");
+       printf("Press any key to continue");
+       getch();
+       User();
+    }
+
+    printf("\n\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+        printf("\t\t\t\t\t\t::                                        ::\n");
+        printf("\t\t\t\t\t\t:::::::::::       Notice  ::::::::::::::::::\n");
+        printf("\t\t\t\t\t\t::                                        ::\n");
+        printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n");
+
+    while(fgets(buff_notice, sizeof(buff_notice), fp) != NULL)
+        {
+            fputs(buff_notice, stdout);
+            fputs("\n\n", stdout);
+        }
+    fclose(fp);
+    back2();
+}
