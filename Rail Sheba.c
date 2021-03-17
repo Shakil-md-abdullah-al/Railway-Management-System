@@ -2993,3 +2993,26 @@ int del_notice()
     }
  }
  /*Back Function End*/
+
+/*Exit Start*/
+    int DisplayResourceNAMessageBox()
+{
+    int msgboxID = MessageBox(
+        0,"Want to Exit?","Exit",MB_ICONQUESTION | MB_OKCANCEL | MB_DEFBUTTON1
+    );
+
+    switch (msgboxID)
+    {
+    case IDOK:
+        {
+            system("taskkill/IM cb_console_runner.exe");
+        }
+        // TODO: add code
+        break;
+    case IDCANCEL:
+        Admin();
+        break;
+    }
+
+    return msgboxID;
+}
