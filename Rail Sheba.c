@@ -3153,3 +3153,38 @@ int reg()
                 User_menu();
             }
 }
+
+int usr_details()
+{
+
+    system("CLS");
+   FILE *fp;
+    printf("\n\n\t\t\t\t\t\t\t\t General Account\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::\n");
+    pUser=(struct log *)malloc(sizeof(struct log));
+
+    if ( ( fp=fopen("user_info.dat", "r")) == NULL) {
+                if ( ( fp=fopen("user_info.dat", "w")) == NULL) {
+                    printf ("Could not open file\n");
+                    printf("Press any key to continue");
+                    getch();
+                    User();
+                }
+            }
+             while ( fread (pUser, sizeof(struct log), 1, fp) == 1) {
+                printf("\n\t\t\t\t\t\tName: %s",pUser->fname);
+                printf("\n\t\t\t\t\t\tEmail: %s",pUser->email);
+                printf("\n\t\t\t\t\t\tPhone: %s",pUser->phone);
+                printf("\n\t\t\t\t\t\tNID: %s",pUser->nid);
+                printf("\n\n");
+            }
+
+            fclose(fp);
+
+            printf("\n\t\t\t\t\t\tPress Any key to Go Back.... ");
+            getch();
+            printf("\n");
+            //User();
+
+}
+
