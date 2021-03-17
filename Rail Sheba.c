@@ -3287,3 +3287,35 @@ int DisplayResourceNAMessageBox3()
     return msgboxID;
 }
 
+/*Option Start*/
+int option()
+{
+    printf("\n\n\t\t\t\t\t\t\t\t\t    Option Menu\n\n");
+    printf("\t\t\t\t\t\t1. Sign In\n");
+    printf("\t\t\t\t\t\t2. About\n");
+    printf("\t\t\t\t\t\t3. Home\n");
+
+
+     int ch;
+    printf("\n\t\t\t\t\t\tEnter Your Choice:");
+    printf("\t\t\t\t\t\t");
+    scanf("%d", &ch);
+     switch(ch)
+    {
+    case 1:
+       user_login();
+        break;
+    case 2:
+    about();
+        break;
+    case 3:
+    home();
+        break;
+     default:
+        printf("Wrong Input\n");
+         printf("\t\t\t\t\t\tPress any key to go back.");
+        getch();
+        system("CLS");
+        option();
+    }
+}
