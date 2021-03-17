@@ -3188,3 +3188,28 @@ int usr_details()
 
 }
 
+int show_item()
+{
+   FILE *fp = fopen("user_info.dat", "r");
+    char buff_log[255];
+
+    if(fp == NULL)
+    {
+       printf("\n\t\t\t\t\t\tUnable to open file!");
+       exit(1);
+    }
+
+    printf("\n\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::       Train List       :::::::::::\n");
+    printf("\t\t\t\t\t\t::                                        ::\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::\n\n\n");
+
+    while(fgets(buff_log, sizeof(buff_log), fp) != NULL)
+        {
+            fputs(buff_log, stdout);
+            fputs("\n\n", stdout);
+        }
+    fclose(fp);
+
+}
