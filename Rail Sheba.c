@@ -3258,3 +3258,9 @@ void admin_login(void){
                         Admin();
             }
 }
+
+int Logout()
+{
+    system("CLS");
+    home();
+}
