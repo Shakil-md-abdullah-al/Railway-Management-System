@@ -2603,3 +2603,16 @@ int user_account()
         user_account();
     }
 }
+
+
+/*General Setting Start*/
+int general()
+{
+    printf("\n\n\t\t\t\t\t\t\t\t\tGeneral\n");
+    printf("\t\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("\n\t\t\t\t\t\t   General Information: \n");
+    usr_details();
+    back2();
+
+}
+/*General Setting End*/
