@@ -3371,3 +3371,22 @@ void ccolor(int clr)
 	SetConsoleTextAttribute(hConsole, clr);
 
 }
+
+int main()
+{
+    system("color 07");
+
+int n;
+
+    int x; double y;
+    char text1[]=    "\n\t\t\t\t\t\t:::::::::::::::::::::::::::::::::::::::::::::\n\t\t\t\t\t\t::                                         ::\n\t\t\t\t\t\t:::::::     PROJECT : RAIL SHEBA      :::::::\n\t\t\t\t\t\t::                                         ::\n\t\t\t\t\t\t:::::::::::::::::::::::::::::::::::::::::::::\n\n\n";
+    for(x=0; text1[x]!=NULL; x++)
+    {
+        printf("%c",text1[x]);
+        for(y=0; y<=1111111; y++)
+        {
+        }
+    }
+    home();
+    return 0;
+}
