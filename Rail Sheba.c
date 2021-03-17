@@ -2554,3 +2554,21 @@ int snack_list()
 	printf("\n\t\t\t116\tPotato Chips \t\t\t\t   15\n");
     printf("\n\n");
 }
+
+int drink_list()
+{
+    //Train list by file
+    system("cls");
+	printf("\t\t\t--------------------------------------------------------------");
+	printf("\n\t\t\tItem No.\tFood Name\t\t\tCharges\n");
+	printf("\t\t\t--------------------------------------------------------------");
+	printf("\n\t\t\t117\tMineral Water(500ml) \t\t\t  15\n");
+	printf("\n\t\t\t118\tMineral Water(1 Liter) \t\t\t  20\n");
+	printf("\n\t\t\t119\tRed Tea \t\t\t\t  10\n");
+	printf("\n\t\t\t120\tMilk Tea \t\t\t\t  15\n");
+	printf("\n\t\t\t121\tCoffee \t\t\t\t\t  30\n");
+	printf("\n\t\t\t122\tCold Drinks (250ml) \t\t\t  20\n");
+	printf("\n\t\t\t123\tCold Drinks (500ml) \t\t\t  35\n");
+	printf("\n\t\t\t124\tCold Drinks (1 Liter) \t\t\t  60\n");
+    printf("\n\n");
+}
